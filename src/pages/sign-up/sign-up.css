@@ -1,0 +1,119 @@
+.sign-up-pg-row {
+    display: flex;
+    height: 100vh;
+}
+
+.sign-up-pg-cl1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#logo-div {
+    display: flex;
+}
+
+#logo-div-cl1,
+#logo-div-cl2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-sm {
+    width: 63px;
+    height: 63px;
+    left: 0px;
+    top: 0px;
+}
+
+#logo-text {
+    text-decoration: none;
+    color: black;
+}
+
+#sign-up-text,
+.sign-up-form,
+.btn-gradient,
+#acc-exist-p {
+    align-self: center;
+}
+
+#sign-up-text {
+    margin-top: 10%;
+}
+
+#create-acc-hd {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 10px;
+}
+
+#create-acc-p1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: justify;
+    color: #000000;
+    opacity: 0.6;
+}
+
+#create-acc-name,
+#create-acc-email,
+#create-acc-pass,
+#confirm-acc-pass {
+    width: 415px;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#l-name,
+#l-email,
+#l-pass,
+#l-cpass {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.6;
+}
+
+.sign-up-pg-cl2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--primary);
+    align-items: center;
+    justify-content: center;
+}
+
+#acc-exist-p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#signin-link {
+    color: var(--primary);
+}
+
+#logo-lg {
+    width: 180.42px;
+    height: 180.42px;
+}
+
+#logo-tagline {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 0px;   
+}
