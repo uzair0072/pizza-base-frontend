@@ -58,7 +58,7 @@ function SignUp() {
                     </p>
                 </div>
                 <div class="sign-up-pg-cl2">
-                    <img id="logo-lg" src={applogo} alt="SVG as an image" />
+                    <img id="logo-lg" src={applogo} alt="SVG" />
                     <h2 id="logo-tagline"> Pizza Base </h2>
                 </div>
             </div>
