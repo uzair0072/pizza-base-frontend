@@ -1,0 +1,133 @@
+* {
+    font-family: 'Poppins';
+}
+
+.sign-in-pg-row {
+    display: flex;
+    height: 100vh;
+}
+
+.sign-in-pg-cl1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+#logo-div {
+    display: flex;
+}
+
+#logo-div-cl1,
+#logo-div-cl2 {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-sm {
+    width: 63px;
+    height: 63px;
+    left: 0px;
+    top: 0px;
+}
+
+#logo-text {
+    line-height: 60px;
+    text-decoration: none;
+    color: black;
+}
+
+#sign-in-text,
+.sign-in-form,
+.btn-gradient,
+#signup-p {
+    align-self: center;
+}
+
+#sign-in-text {
+    margin-top: 10%;
+    width: 415px;
+}
+
+#sign-in-hd {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+#sign-in-p1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #000000;
+    opacity: 0.6;
+}
+
+#create-acc-email {
+    width: 415px;
+    height: 45px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#l-email,
+#l-pass {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 0.6;
+}
+
+#forgot-pass {
+    display: flex;
+    flex-direction: column;
+    color: var(--primary);
+    align-items: flex-end;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#btn-google, #btn-gradient {
+    margin-top: 10px;
+}
+
+#signup-p {
+    margin-top: 15px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#signup-link {
+    color: var(--primary);
+}
+
+.sign-in-pg-cl2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: var(--primary);
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-lg {
+    width: 180.42px;
+    height: 180.42px;
+}
+
+#logo-tagline {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 0px;
+}

@@ -1,16 +1,16 @@
 import React from "react";
-import "./sign-up.css";
-import Buttons from "../../components/buttons/buttons.js";
-import applogo from "../../assets/logo/app-logo.svg"
-import "../../fonts/app-fonts.module.css"
+import "./sign-in.css";
+import applogo from "..//..//assets/logo/app-logo.svg";
+import Form from "../../components/form-fields/show-password";
+import Buttons from "../../components/buttons/buttons";
+import "..//..//fonts/app-fonts.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import Form from "..//..//components/form-fields/show-password";
 
-function SignUp() {
+function SignIn() {
     return (
         <>
-            <div class="sign-up-pg-row">
-                <div class="sign-up-pg-cl1">
+            <div class="sign-in-pg-row">
+                <div class="sign-in-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
                             <a href="">
@@ -23,40 +23,47 @@ function SignUp() {
                             </p>
                         </div>
                     </div>
-                    <div id="sign-up-text">
-                        <h2 id="create-acc-hd">
-                            Make a new account
+                    <div id="sign-in-text">
+                        <h2 id="sign-in-hd">
+                            Welcome Back
                         </h2>
-                        <p id="create-acc-p1">
-                            Enter the following information to make an account.
+                        <p id="sign-in-p1">
+                            Welcome Back! Please enter your details.
                         </p>
                     </div>
-                    <div class="sign-up-form">
+                    <div class="sign-in-form">
                         <form action="POST">
-                            <label id="l-name">Name:</label> <br></br>
-                            <input type="text" name="Name" placeholder="John Doe" id="create-acc-name" /> <br></br>
                             <label id="l-email">Email Address:</label> <br></br>
-                            <input type="email" name="email" placeholder="johndoe@example.com" id="create-acc-email" /> <br></br>
+                            <input id="create-acc-email" type="email" name="email" placeholder="johndoe@example.com" /> <br></br>
                             <label id="l-pass">Password:</label> <br></br>
                             <Form />
-                            <label id="l-cpass">Confirm Password:</label> <br></br>
-                            <Form />
                         </form>
+                        <div className="forgot-pass-div">
+                            <a id="forgot-pass" href=""> Forgot password </a>
+                        </div>
                     </div>
-                    <div className="btn-gradient">
+
+                    <div className="btn">
                         <Buttons
-                            label={"Create Account"}
+                            label={"Sign in"}
                             id={"btn-gradient"}
                             height={45}
                             width={415}
                             variant={'primary'}
                         />
+                        <Buttons
+                            label={"Sign in with Google"}
+                            id={"btn-google"}
+                            height={45}
+                            width={415}
+                            variant={'google'}
+                        />
                     </div>
-                    <p id="acc-exist-p">
-                        Already have an account? <a id="signin-link" href="" > Sign in </a>
+                    <p id="signup-p">
+                        Don't have an account? <a id="signup-link" href="" > Sign up </a>
                     </p>
                 </div>
-                <div class="sign-up-pg-cl2">
+                <div class="sign-in-pg-cl2">
                     <img id="logo-lg" src={applogo} alt="SVG" />
                     <h2 id="logo-tagline"> Pizza Base </h2>
                 </div>
@@ -65,4 +72,4 @@ function SignUp() {
     )
 }
 
-export default SignUp
+export default SignIn
