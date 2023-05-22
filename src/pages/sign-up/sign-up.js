@@ -4,6 +4,8 @@ import Buttons from "../../components/buttons/buttons.js";
 import applogo from "../../assets/logo/app-logo.svg"
 import "../../configs/app-colors.module.css"
 import "../../fonts/app-fonts.module.css"
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import Form from "..//..//components/form-fields/show-password";
 
 function SignUp() {
     return (
@@ -17,9 +19,9 @@ function SignUp() {
                             </a>
                         </div>
                         <div id="logo-div-cl2">
-                            <h4 >
-                                <a id="logo-text" href=""> Pizza Base </a>
-                            </h4>
+                            <p >
+                                <a id="logo-text" href=""> <strong> Pizza Base </strong> </a>
+                            </p>
                         </div>
                     </div>
                     <div id="sign-up-text">
@@ -27,7 +29,8 @@ function SignUp() {
                             Make a new account
                         </h2>
                         <p id="create-acc-p1">
-                            Enter the following information to make an account.                        </p>
+                            Enter the following information to make an account.
+                        </p>
                     </div>
                     <div class="sign-up-form">
                         <form action="POST">
@@ -36,16 +39,16 @@ function SignUp() {
                             <label id="l-email">Email Address:</label> <br></br>
                             <input type="email" name="email" placeholder="johndoe@example.com" id="create-acc-email" /> <br></br>
                             <label id="l-pass">Password:</label> <br></br>
-                            <input type="password" name="pass" placeholder="Password" id="create-acc-pass" /> <br></br>
+                            <Form />
                             <label id="l-cpass">Confirm Password:</label> <br></br>
-                            <input type="password" name="confirm-pass" placeholder="Password" id="confirm-acc-pass" />
+                            <Form />
                         </form>
                     </div>
                     <div className="btn-gradient">
                         <Buttons
                             label={"Create Account"}
                             id={"btn-gradient"}
-                            height={50}
+                            height={45}
                             width={415}
                             variant={'primary'}
                         />
