@@ -1,11 +1,11 @@
 import './app.css';
-import SignIn from './pages/sign-in/sign-in';
+import ForgotPassword from './pages/forgot-password-page/forgot-password';
 
 
 function App() {
   return (
     <>
-      <SignIn />
+      <ForgotPassword />
     </>
   );
 }

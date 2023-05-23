@@ -1,16 +1,16 @@
 import React from "react";
-import "./sign-in.css";
+import "./forgot-password.css";
 import applogo from "..//..//assets/logo/app-logo.svg";
 import Form from "../../components/form-fields/show-password";
 import Buttons from "../../components/buttons/buttons";
 import "..//..//fonts/app-fonts.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
-function SignIn() {
+function ForgotPassword() {
     return (
         <>
-            <div class="sign-in-pg-row">
-                <div class="sign-in-pg-cl1">
+            <div class="forgot-pass-pg-row">
+                <div class="forgot-pass-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
                             <a href="">
@@ -23,47 +23,36 @@ function SignIn() {
                             </p>
                         </div>
                     </div>
-                    <div id="sign-in-text">
-                        <h2 id="sign-in-hd">
-                            Welcome Back
+                    <div id="forgot-pass-text">
+                        <h2 id="forgot-pass-hd">
+                            Forgot Your Password?
                         </h2>
-                        <p id="sign-in-p1">
-                            Welcome Back! Please enter your details.
+                        <p id="forgot-pass-p1">
+                            Enter your registered email to receive passwword reset instructions.
                         </p>
                     </div>
-                    <div class="sign-in-form">
+                    <div class="forgot-pass-form">
                         <form action="POST">
                             <label id="l-email">Email Address:</label> <br></br>
-                            <input id="sign-in-email" type="email" name="email" placeholder="johndoe@example.com" /> <br></br>
-                            <label id="l-pass">Password:</label> <br></br>
-                            <Form />
+                            <input id="registered-email" type="email" name="email" placeholder="johndoe@example.com" /> <br></br>
                         </form>
-                        <div className="forgot-pass-div">
-                            <a id="forgot-pass" href=""> Forgot password </a>
+                        <div className="remember-pass-div">
+                            <p> Remember password? <a id="remember-pass" href=""> Sign in </a>
+                            </p>
                         </div>
                     </div>
 
                     <div className="btn">
                         <Buttons
-                            label={"Sign in"}
+                            label={"Send"}
                             id={"btn-gradient"}
                             height={45}
                             width={415}
                             variant={'primary'}
                         />
-                        <Buttons
-                            label={"Sign in with Google"}
-                            id={"btn-google"}
-                            height={45}
-                            width={415}
-                            variant={'google'}
-                        />
                     </div>
-                    <p id="signup-p">
-                        Don't have an account? <a id="signup-link" href="" > Sign up </a>
-                    </p>
                 </div>
-                <div class="sign-in-pg-cl2">
+                <div class="forgot-pass-cl2">
                     <img id="logo-lg" src={applogo} alt="SVG" />
                     <h2 id="logo-tagline"> Pizza Base </h2>
                 </div>
@@ -72,4 +61,4 @@ function SignIn() {
     )
 }
 
-export default SignIn
+export default ForgotPassword
