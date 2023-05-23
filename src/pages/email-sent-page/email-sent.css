@@ -2,12 +2,12 @@
     font-family: 'Poppins';
 }
 
-.forgot-pass-pg-row {
+.email-sent-pg-row {
     display: flex;
     height: 100vh;
 }
 
-.forgot-pass-pg-cl1 {
+.email-sent-pg-cl1 {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -36,25 +36,24 @@
     color: black;
 }
 
-#forgot-pass-text,
-.forgot-pass-form,
+#email-sent-text,
 .btn,
-#forgot-pass-p1 {
+#email-sent-p1 {
     align-self: center;
 }
 
-#forgot-pass-text {
-    margin-top: 10%;
+#email-sent-text {
+    margin-top: 20%;
     width: 415px;
 }
 
-#forgot-pass-hd {
+#email-sent-hd {
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
 }
 
-#forgot-pass-p1 {
+#email-sent-p1 {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -64,37 +63,17 @@
     opacity: 0.6;
 }
 
-#registered-email {
-    width: 415px;
-    height: 45px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-}
-
-#l-email {
-    margin-top: 30px;
+.resend-pass-div {
+    margin-top: 40px;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-::placeholder {
-    color: black;
-    opacity: 0.6;
-}
-
-.remember-pass-div {
-    margin-top: 15px;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    text-align: right;
+    text-align: center;
     color: rgba(0, 0, 0, 0.6);
 }
 
-#remember-pass{
+#resend-pass{
     color: var(--primary);
     font-style: normal;
     font-weight: 600;
@@ -106,7 +85,7 @@
     margin-top: 10px;
 }
 
-.forgot-pass-pg-cl2 {
+.email-sent-pg-cl2 {
     display: flex;
     flex: 1;
     flex-direction: column;

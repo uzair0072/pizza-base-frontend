@@ -1,11 +1,10 @@
 import './app.css';
-import ForgotPassword from './pages/forgot-password-page/forgot-password';
-
+import EmailSent from './pages/email-sent-page/email-sent';
 
 function App() {
   return (
     <>
-      <ForgotPassword />
+      <EmailSent />
     </>
   );
 }
