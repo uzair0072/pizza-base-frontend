@@ -1,10 +1,10 @@
 import './app.css';
-import EmailSent from './pages/email-sent-page/email-sent';
+import NavBar from './components/navbar/navbar';
 
 function App() {
   return (
     <>
-      <EmailSent />
+      <NavBar />
     </>
   );
 }
