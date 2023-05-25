@@ -1,10 +1,10 @@
 import './app.css';
-import NavBar from './components/navbar/navbar';
+import MyProfile from './pages/sign-in/sub-pages/my-profile/my-profile';
 
 function App() {
   return (
     <>
-      <NavBar />
+      <MyProfile />
     </>
   );
 }
