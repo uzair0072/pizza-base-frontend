@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './search-bar.css';
-import search from '..//..//assets/logo/search.svg';
+import search from '..//..//assets/icons/search.svg';
 
 function SearchBar() {
     const [searchTerm, setSearchTerm] = useState('');

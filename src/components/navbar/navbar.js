@@ -1,8 +1,8 @@
 import React from "react";
 import "./navbar.css";
 import applogo from "..//..//assets/logo/app-logo.svg";
-import cartlogo from "..//..//assets/logo/shopping-cart.svg";
-import accountlogo from "..//..//assets/logo/profile-circle.svg";
+import cartlogo from "..//..//assets/icons/shopping-cart.svg";
+import accountlogo from "..//..//assets/icons/profile-circle.svg";
 import "..//..//fonts/app-fonts.module.css";
 import "..//..//configs/app-colors.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";

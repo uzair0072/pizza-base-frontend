@@ -22,6 +22,18 @@
     cursor: pointer;
 }
 
+#btn-edit, #btn-del {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
 
 #google-svg {
     width: 45px;
