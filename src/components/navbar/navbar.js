@@ -7,19 +7,20 @@ import "..//..//fonts/app-fonts.module.css";
 import "..//..//configs/app-colors.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SearchBar from "../search-bar/search-bar";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
         <>
             <header>
                 <div className="logo">
-                    <a href="">
+                    <Link to="/">
                         <img id="logo-sm" src={applogo} alt="Logo" />
-                    </a>
+                    </Link>
                 </div>
                 <div className="text">
                     <p >
-                        <a id="logo-text" href=""> <strong> Pizza Base </strong> </a>
+                        <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                     </p>
                 </div>
 

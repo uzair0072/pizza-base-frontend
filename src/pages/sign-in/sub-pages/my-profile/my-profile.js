@@ -5,6 +5,7 @@ import Buttons from "..//..//..//..//components/buttons/buttons";
 import "..//..//..//..//fonts/app-fonts.module.css";
 import "..//..//..//..//..//node_modules/bootstrap/dist/css/bootstrap.min.css"
 import NavBar from "../../../../components/navbar/navbar";
+import { Link } from "react-router-dom";
 
 function MyProfile() {
     return (
@@ -13,11 +14,11 @@ function MyProfile() {
             <div class="container">
                 <div class="column">
                     <ul>
-                        <button className="btn-ul"> <li>My Profile</li> </button> <br></br>
-                        <a href="" id="fav"> <li >Favorite Items</li> </a>  <br></br>
-                        <a href="" id="del-acc"> <li >Delete Account</li> </a>  <br></br>
-                        <a href="" id="acc-info"> <li >Account Information</li> </a> <br></br>
-                        <a href="" id="settings"> <li >Settings and Configuration</li> </a>
+                        <button className="btn-ul" onClick={MyProfile}> <li>My Profile</li> </button> <br></br>
+                        <Link to="" id="fav"> <li >Favorite Items</li> </Link>  <br></br>
+                        <Link to="" id="del-acc"> <li >Delete Account</li> </Link>  <br></br>
+                        <Link to="" id="acc-info"> <li >Account Information</li> </Link> <br></br>
+                        <Link to="/my-settings" id="settings"> <li >Settings and Configuration</li> </Link>
                     </ul>
                 </div>
                 <div class="column">

@@ -9,7 +9,8 @@ function Form() {
   const onPasswordChange = (e) => {
     setPasswordInput(e.target.value);
   };
-  const toggle = () => {
+  const toggle = (e) => {
+    e.preventDefault();
     if (password === "password") {
       setPasswordValue("text");
       return;

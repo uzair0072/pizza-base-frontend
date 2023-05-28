@@ -4,6 +4,7 @@ import applogo from "..//..//assets/logo/app-logo.svg";
 import Buttons from "../../components/buttons/buttons";
 import "..//..//fonts/app-fonts.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import { Link } from "react-router-dom";
 
 function ForgotPassword() {
     return (
@@ -12,13 +13,13 @@ function ForgotPassword() {
                 <div class="forgot-pass-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
-                            <a href="">
+                            <Link to="/">
                                 <img id="logo-sm" src={applogo} alt="logo-small" />
-                            </a>
+                            </Link>
                         </div>
                         <div id="logo-div-cl2">
                             <p >
-                                <a id="logo-text" href=""> <strong> Pizza Base </strong> </a>
+                                <Link id="logo-text" to=""> <strong> Pizza Base </strong> </Link>
                             </p>
                         </div>
                     </div>
@@ -27,16 +28,16 @@ function ForgotPassword() {
                             Forgot Your Password?
                         </h2>
                         <p id="forgot-pass-p1">
-                            Enter your registered email to receive passwword reset instructions.
+                            Enter your registered email to receive password reset instructions.
                         </p>
                     </div>
                     <div class="forgot-pass-form">
                         <form action="POST">
-                            <label id="l-email">Email Address:</label> <br></br>
+                            <label id="l-email-forgot-pg">Email Address:</label> <br></br>
                             <input id="registered-email" type="email" name="email" placeholder="johndoe@example.com" /> <br></br>
                         </form>
                         <div className="remember-pass-div">
-                            <p> Remember password? <a id="remember-pass" href=""> Sign in </a>
+                            <p> Remember password? <Link id="remember-pass" to="/sign-in"> Sign in </Link>
                             </p>
                         </div>
                     </div>

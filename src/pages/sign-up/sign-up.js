@@ -5,6 +5,7 @@ import applogo from "../../assets/logo/app-logo.svg"
 import "../../fonts/app-fonts.module.css"
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import Form from "..//..//components/form-fields/show-password";
+import { Link } from "react-router-dom";
 
 function SignUp() {
     return (
@@ -13,13 +14,13 @@ function SignUp() {
                 <div class="sign-up-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
-                            <a href="">
+                            <Link to="/">
                                 <img id="logo-sm" src={applogo} alt="logo-small" />
-                            </a>
+                            </Link>
                         </div>
                         <div id="logo-div-cl2">
-                            <p >
-                                <a id="logo-text" href=""> <strong> Pizza Base </strong> </a>
+                            <p>
+                                <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                             </p>
                         </div>
                     </div>
@@ -53,7 +54,7 @@ function SignUp() {
                         />
                     </div>
                     <p id="acc-exist-p">
-                        Already have an account? <a id="signin-link" href="" > Sign in </a>
+                        Already have an account? <Link id="signin-link" to="/sign-in" > Sign in </Link>
                     </p>
                 </div>
                 <div class="sign-up-pg-cl2">

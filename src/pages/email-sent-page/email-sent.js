@@ -5,6 +5,7 @@ import Buttons from "../../components/buttons/buttons";
 import "..//..//fonts/app-fonts.module.css";
 import "..//..//configs/app-colors.module.css"
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import { Link } from "react-router-dom";
 
 function EmailSent() {
     return (
@@ -13,13 +14,13 @@ function EmailSent() {
                 <div class="email-sent-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
-                            <a href="">
+                            <Link to="">
                                 <img id="logo-sm" src={applogo} alt="logo-small" />
-                            </a>
+                            </Link>
                         </div>
                         <div id="logo-div-cl2">
                             <p >
-                                <a id="logo-text" href=""> <strong> Pizza Base </strong> </a>
+                                <Link id="logo-text" to=""> <strong> Pizza Base </strong> </Link>
                             </p>
                         </div>
                     </div>
@@ -40,7 +41,7 @@ function EmailSent() {
                             variant={'primary'}
                         />
                         <div className="resend-pass-div">
-                            <p> Didn't receive the link? <a id="resend-pass" href=""> Resend </a>
+                            <p> Didn't receive the link? <Link id="resend-pass" to=""> Resend </Link>
                             </p>
                         </div>
                     </div>

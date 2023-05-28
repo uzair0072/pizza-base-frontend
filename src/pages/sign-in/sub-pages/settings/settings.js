@@ -4,6 +4,7 @@ import "..//..//..//..//fonts/app-fonts.module.css";
 import "..//..//..//..//..//node_modules/bootstrap/dist/css/bootstrap.min.css"
 import NavBar from "../../../../components/navbar/navbar";
 import FancyToggleButton from "../../../../components/toggle-switch/toggle-switch";
+import { Link } from "react-router-dom";
 
 function Settings() {
     return (
@@ -12,11 +13,11 @@ function Settings() {
             <div class="container">
                 <div class="column">
                     <ul>
-                        <a href="" id="settings"> <li >My Profile</li> </a> <br></br>
-                        <a href="" id="fav"> <li >Favorite Items</li> </a>  <br></br>
-                        <a href="" id="del-acc"> <li >Delete Account</li> </a>  <br></br>
-                        <a href="" id="acc-info"> <li >Account Information</li> </a> <br></br>
-                        <button className="btn-ul"> <li>Settings and Configuration</li> </button>
+                        <Link to="/my-profile" id="settings"> <li >My Profile</li> </Link> <br></br>
+                        <Link to="" id="fav"> <li >Favorite Items</li> </Link>  <br></br>
+                        <Link to="" id="del-acc"> <li >Delete Account</li> </Link>  <br></br>
+                        <Link to="" id="acc-info"> <li >Account Information</li> </Link> <br></br>
+                        <button className="btn-ul" onClick={Settings}> <li>Settings and Configuration</li> </button>
                     </ul>
                 </div>
                 <div class="column">
@@ -50,21 +51,21 @@ function Settings() {
                     </div>
                     <div class="config-col">
                         <div className="configs">
-                            <a href="" class="config-link">
+                            <Link to="" class="config-link">
                                 <p class="config-list"> Ratings and Reviews </p>
-                            </a>
-                            <a href="" class="config-link">
+                            </Link>
+                            <Link to="" class="config-link">
                                 <p class="config-list"> Help Center </p>
-                            </a>
-                            <a href="" class="config-link">
+                            </Link>
+                            <Link to="" class="config-link">
                                 <p class="config-list"> Report a Problem </p>
-                            </a>
-                            <a href="" class="config-link">
+                            </Link>
+                            <Link to="" class="config-link">
                                 <p class="config-list"> Privacy Policy </p>
-                            </a>
-                            <a href="" class="config-link">
+                            </Link>
+                            <Link to="" class="config-link">
                                 <p class="config-list"> App Info </p>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ import Form from "../../components/form-fields/show-password";
 import Buttons from "../../components/buttons/buttons";
 import "..//..//fonts/app-fonts.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import { Link } from "react-router-dom";
 
 function SignIn() {
     return (
@@ -13,13 +14,13 @@ function SignIn() {
                 <div class="sign-in-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
-                            <a href="">
+                            <Link to="/">
                                 <img id="logo-sm" src={applogo} alt="logo-small" />
-                            </a>
+                            </Link>
                         </div>
                         <div id="logo-div-cl2">
                             <p >
-                                <a id="logo-text" href=""> <strong> Pizza Base </strong> </a>
+                                <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                             </p>
                         </div>
                     </div>
@@ -39,7 +40,7 @@ function SignIn() {
                             <Form />
                         </form>
                         <div className="forgot-pass-div">
-                            <a id="forgot-pass" href=""> Forgot password </a>
+                            <Link id="forgot-pass" to="/forgot-password"> Forgot password </Link>
                         </div>
                     </div>
 
@@ -60,7 +61,7 @@ function SignIn() {
                         />
                     </div>
                     <p id="signup-p">
-                        Don't have an account? <a id="signup-link" href="" > Sign up </a>
+                        Don't have an account? <Link id="signup-link" to="/" > Sign up </Link>
                     </p>
                 </div>
                 <div class="sign-in-pg-cl2">
