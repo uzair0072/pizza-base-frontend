@@ -1,10 +1,10 @@
 import './app.css';
-import MyProfile from './pages/sign-in/sub-pages/my-profile/my-profile';
+import Settings from './pages/sign-in/sub-pages/settings/settings';
 
 function App() {
   return (
     <>
-      <MyProfile />
+      <Settings />
     </>
   );
 }
