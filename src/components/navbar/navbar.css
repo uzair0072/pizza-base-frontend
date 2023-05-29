@@ -13,18 +13,21 @@ header {
     background-color: var(--primary);
 }
 
-#logo-sm {
-    width: 70px;
-    height: 70px;
-    left: 10px;
-    top: 5px;
+.logo-sm {
+    width: 90px;
+    height: 90px;
 }
 
-#logo-text {
+.logo-text {
     display: flex;
     width: 90px;
     height: 70px;
-    line-height: 65px;
+    line-height: 85px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-text:hover {
     text-decoration: none;
     color: black;
 }

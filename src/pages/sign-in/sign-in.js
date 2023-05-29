@@ -15,12 +15,12 @@ function SignIn() {
                     <div id="logo-div">
                         <div id="logo-div-cl1">
                             <Link to="/">
-                                <img id="logo-sm" src={applogo} alt="logo-small" />
+                                <img className="logo-sm" src={applogo} alt="logo-small" />
                             </Link>
                         </div>
                         <div id="logo-div-cl2">
                             <p >
-                                <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
+                                <Link className="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                             </p>
                         </div>
                     </div>
@@ -43,23 +43,21 @@ function SignIn() {
                             <Link id="forgot-pass" to="/forgot-password"> Forgot password </Link>
                         </div>
                     </div>
+                    <Buttons
+                        label={"Sign in"}
+                        id={"btn-gradient"}
+                        height={45}
+                        width={415}
+                        variant={'primary'}
+                    />
 
-                    <div className="btn">
-                        <Buttons
-                            label={"Sign in"}
-                            id={"btn-gradient"}
-                            height={45}
-                            width={415}
-                            variant={'primary'}
-                        />
-                        <Buttons
-                            label={"Sign in with Google"}
-                            id={"btn-google"}
-                            height={45}
-                            width={415}
-                            variant={'google'}
-                        />
-                    </div>
+                    <Buttons
+                        label={"Sign in with Google"}
+                        id={"btn-google"}
+                        height={45}
+                        width={415}
+                        variant={'google'}
+                    />
                     <p id="signup-p">
                         Don't have an account? <Link id="signup-link" to="/" > Sign up </Link>
                     </p>

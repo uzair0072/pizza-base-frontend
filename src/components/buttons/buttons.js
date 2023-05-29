@@ -2,7 +2,7 @@ import React from "react";
 import "./buttons.css";
 import googleicon from "..//..//assets/icons/google-icon.svg";
 import btnedit from "..//..//assets/icons/btn-edit.svg";
-import btndel from "..//..//assets/icons/btn-del.svg";
+import addicon from "..//..//assets/icons/add-icon.svg";
 
 
 function Buttons({ variant, id, label, width, height }) {
@@ -23,11 +23,11 @@ function Buttons({ variant, id, label, width, height }) {
     else if (variant === 'google') {
         btnClassName = 'btn-google';
     }
+    else if (variant === 'add') {
+        btnClassName = 'btn-add';
+    }
     else if (variant === 'edit') {
         btnClassName = 'btn-edit';
-    }
-    else if (variant === 'delete') {
-        btnClassName = 'btn-del';
     }
     else {
         style.backgroundColor = secondary;
@@ -39,7 +39,7 @@ function Buttons({ variant, id, label, width, height }) {
                 {variant === 'google' ? <img src={googleicon} id="google-svg" alt="google-icon" /> : <div></div>}
                 {label}
                 {variant === 'edit' ? <img src={btnedit} id="edit-svg" alt="edit-icon" /> : <div></div>}
-                {variant === 'delete' ? <img src={btndel} id="del-svg" alt="del-icon" /> : <div></div>}
+                {variant === 'add' ? <img src={addicon} id="add-svg" alt="add-icon" /> : <div></div>}
             </button>
         </>
     )

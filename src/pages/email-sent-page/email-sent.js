@@ -14,13 +14,13 @@ function EmailSent() {
                 <div class="email-sent-pg-cl1">
                     <div id="logo-div">
                         <div id="logo-div-cl1">
-                            <Link to="">
-                                <img id="logo-sm" src={applogo} alt="logo-small" />
+                            <Link to="/">
+                                <img className="logo-sm" src={applogo} alt="logo-small" />
                             </Link>
                         </div>
                         <div id="logo-div-cl2">
                             <p >
-                                <Link id="logo-text" to=""> <strong> Pizza Base </strong> </Link>
+                                <Link className="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                             </p>
                         </div>
                     </div>

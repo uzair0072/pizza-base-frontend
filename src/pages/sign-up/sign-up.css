@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Poppins';
 }
 
@@ -13,25 +13,25 @@
     flex-direction: column;
 }
 
-#logo-div {
+.logo-div {
     display: flex;
 }
 
 #logo-div-cl1,
 #logo-div-cl2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-#logo-sm {
-    width: 63px;
-    height: 63px;
-    left: 0px;
-    top: 0px;
+.logo-sm {
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-#logo-text {
-    line-height: 60px;
+.logo-text {
+    line-height: 85px;
     text-decoration: none;
     color: black;
 }
@@ -68,6 +68,7 @@
     width: 415px;
     height: 45px;
     margin-bottom: 10px;
+    padding: 10px 10px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
@@ -122,5 +123,5 @@
     font-style: normal;
     font-weight: 700;
     font-size: 28px;
-    line-height: 0px;   
+    line-height: 0px;
 }

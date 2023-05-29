@@ -14,7 +14,7 @@ function MyProfile() {
             <div class="container">
                 <div class="column">
                     <ul>
-                        <button className="btn-ul" onClick={MyProfile}> <li>My Profile</li> </button> <br></br>
+                        <Link to="" id="my-profile"> <li >My Profile</li> </Link>  <br></br>
                         <Link to="" id="fav"> <li >Favorite Items</li> </Link>  <br></br>
                         <Link to="" id="del-acc"> <li >Delete Account</li> </Link>  <br></br>
                         <Link to="" id="acc-info"> <li >Account Information</li> </Link> <br></br>
@@ -38,14 +38,14 @@ function MyProfile() {
                                 variant={'edit'}
                                 id={'btn-edit'}
                                 label={'Edit'}
-                                width={86}
+                                width={110}
                                 height={42}
                             />
                             <Buttons
-                                variant={'delete'}
-                                id={'btn-del'}
-                                label={'Remove'}
-                                width={110}
+                                variant={'add'}
+                                id={'btn-add'}
+                                label={'Add'}
+                                width={86}
                                 height={42}
                             />
                         </div>
@@ -59,14 +59,14 @@ function MyProfile() {
                                         variant={'edit'}
                                         id={'btn-edit'}
                                         label={'Edit'}
-                                        width={86}
+                                        width={110}
                                         height={42}
                                     />
                                     <Buttons
-                                        variant={'delete'}
-                                        id={'btn-del'}
-                                        label={'Remove'}
-                                        width={110}
+                                        variant={'add'}
+                                        id={'btn-add'}
+                                        label={'Add'}
+                                        width={86}
                                         height={42}
                                     />
                                 </div>
@@ -100,14 +100,14 @@ function MyProfile() {
                                         variant={'edit'}
                                         id={'btn-edit'}
                                         label={'Edit'}
-                                        width={86}
+                                        width={110}
                                         height={42}
                                     />
                                     <Buttons
-                                        variant={'delete'}
-                                        id={'btn-del'}
-                                        label={'Remove'}
-                                        width={110}
+                                        variant={'add'}
+                                        id={'btn-add'}
+                                        label={'Add'}
+                                        width={86}
                                         height={42}
                                     />
                                 </div>

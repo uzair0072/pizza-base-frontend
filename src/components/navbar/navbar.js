@@ -15,26 +15,26 @@ function NavBar() {
             <header>
                 <div className="logo">
                     <Link to="/">
-                        <img id="logo-sm" src={applogo} alt="Logo" />
+                        <img className="logo-sm" src={applogo} alt="Logo" />
                     </Link>
                 </div>
                 <div className="text">
                     <p >
-                        <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
+                        <Link className="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                     </p>
                 </div>
 
                 <div class="header-right">
                     <SearchBar />
                     <div class="cart-logo">
-                        <a href="">
+                        <Link to="">
                             <img src={cartlogo} alt="Cart Logo" />
-                        </a>
+                        </Link>
                     </div>
                     <div class="account-logo">
-                        <a href="">
+                        <Link to="">
                             <img src={accountlogo} alt="Account Logo" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </header>

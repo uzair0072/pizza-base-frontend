@@ -17,7 +17,7 @@ function Settings() {
                         <Link to="" id="fav"> <li >Favorite Items</li> </Link>  <br></br>
                         <Link to="" id="del-acc"> <li >Delete Account</li> </Link>  <br></br>
                         <Link to="" id="acc-info"> <li >Account Information</li> </Link> <br></br>
-                        <button className="btn-ul" onClick={Settings}> <li>Settings and Configuration</li> </button>
+                        <Link to="" id="acc-settings"> <li >Settings and Configuration</li> </Link>
                     </ul>
                 </div>
                 <div class="column">

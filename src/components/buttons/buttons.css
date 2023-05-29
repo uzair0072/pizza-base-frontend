@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-#btn-edit, #btn-del {
+#btn-edit, #btn-add {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -35,7 +35,7 @@
     border-radius: 30px;
 }
 
-#google-svg {
+#google-svg, #add-svg {
     width: 45px;
     height: 30px;
 }

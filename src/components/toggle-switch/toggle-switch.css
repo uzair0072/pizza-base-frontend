@@ -19,7 +19,7 @@
   }
   
   .fancy-toggle-button.on {
-    background-color: #1890FF;
+    background-color: var(--primary);
   }
   
   .fancy-toggle-button.on .toggle-switch {
