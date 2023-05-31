@@ -14,11 +14,11 @@ function MyProfile() {
             <div class="container">
                 <div class="column">
                     <ul>
-                        <Link to="" id="my-profile"> <li >My Profile</li> </Link>  <br></br>
+                        <Link to="" id="my-profile-profile-pg"> <li >My Profile</li> </Link>  <br></br>
                         <Link to="" id="fav"> <li >Favorite Items</li> </Link>  <br></br>
-                        <Link to="" id="del-acc"> <li >Delete Account</li> </Link>  <br></br>
+                        <Link to="/delete-account" id="del-acc-profile-pg"> <li >Delete Account</li> </Link>  <br></br>
                         <Link to="" id="acc-info"> <li >Account Information</li> </Link> <br></br>
-                        <Link to="/my-settings" id="settings"> <li >Settings and Configuration</li> </Link>
+                        <Link to="/my-settings" id="acc-settings-profile-pg"> <li >Settings and Configuration</li> </Link>
                     </ul>
                 </div>
                 <div class="column">
@@ -36,16 +36,9 @@ function MyProfile() {
                         <div className="btn-profile-col">
                             <Buttons
                                 variant={'edit'}
-                                id={'btn-edit'}
+                                id={'btn-edit-profile'}
                                 label={'Edit'}
                                 width={110}
-                                height={42}
-                            />
-                            <Buttons
-                                variant={'add'}
-                                id={'btn-add'}
-                                label={'Add'}
-                                width={86}
                                 height={42}
                             />
                         </div>
@@ -57,16 +50,9 @@ function MyProfile() {
                                 <div className="btn-profile-col">
                                     <Buttons
                                         variant={'edit'}
-                                        id={'btn-edit'}
+                                        id={'btn-edit-info'}
                                         label={'Edit'}
                                         width={110}
-                                        height={42}
-                                    />
-                                    <Buttons
-                                        variant={'add'}
-                                        id={'btn-add'}
-                                        label={'Add'}
-                                        width={86}
                                         height={42}
                                     />
                                 </div>
@@ -98,7 +84,7 @@ function MyProfile() {
                                 <div className="btn-profile-col">
                                     <Buttons
                                         variant={'edit'}
-                                        id={'btn-edit'}
+                                        id={'btn-edit-address'}
                                         label={'Edit'}
                                         width={110}
                                         height={42}

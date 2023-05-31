@@ -22,7 +22,7 @@
     cursor: pointer;
 }
 
-#btn-edit, #btn-add {
+#btn-edit-profile, #btn-edit-info, #btn-edit-address, #btn-add {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -32,7 +32,8 @@
     gap: 5px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
+    border-radius: 10px;
+
 }
 
 #google-svg, #add-svg {

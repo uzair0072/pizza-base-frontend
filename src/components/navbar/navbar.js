@@ -15,12 +15,12 @@ function NavBar() {
             <header>
                 <div className="logo">
                     <Link to="/">
-                        <img className="logo-sm" src={applogo} alt="Logo" />
+                        <img id="logo-sm" src={applogo} alt="Logo" />
                     </Link>
                 </div>
                 <div className="text">
                     <p >
-                        <Link className="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
+                        <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                     </p>
                 </div>
 

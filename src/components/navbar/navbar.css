@@ -12,12 +12,13 @@ header {
     background-color: var(--primary);
 }
 
-.logo-sm {
-    width: 90px;
+#logo-sm {
+    width: 70px;
     height: 90px;
+    margin-left: 20px;
 }
 
-.logo-text {
+#logo-text {
     display: flex;
     width: 90px;
     height: 70px;

@@ -13,11 +13,11 @@ function Settings() {
             <div class="container">
                 <div class="column">
                     <ul>
-                        <Link to="/my-profile" id="settings"> <li >My Profile</li> </Link> <br></br>
+                        <Link to="/my-profile" id="my-profile-settings-pg"> <li >My Profile</li> </Link> <br></br>
                         <Link to="" id="fav"> <li >Favorite Items</li> </Link>  <br></br>
-                        <Link to="" id="del-acc"> <li >Delete Account</li> </Link>  <br></br>
+                        <Link to="/delete-account" id="del-acc-settings-pg"> <li >Delete Account</li> </Link>  <br></br>
                         <Link to="" id="acc-info"> <li >Account Information</li> </Link> <br></br>
-                        <Link to="" id="acc-settings"> <li >Settings and Configuration</li> </Link>
+                        <Link to="" id="acc-settings-settings-pg"> <li >Settings and Configuration</li> </Link>
                     </ul>
                 </div>
                 <div class="column">
