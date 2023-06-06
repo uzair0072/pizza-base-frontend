@@ -59,7 +59,7 @@ function SignIn() {
                         variant={'google'}
                     />
                     <p id="signup-p">
-                        Don't have an account? <Link id="signup-link" to="/" > Sign up </Link>
+                        Don't have an account? <Link id="signup-link" to="/sign-up" > Sign up </Link>
                     </p>
                 </div>
                 <div class="sign-in-pg-cl2">

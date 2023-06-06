@@ -8,13 +8,15 @@ import Settings from './pages/sign-in/sub-pages/settings/settings';
 import ForgotPassword from './pages/forgot-password-page/forgot-password';
 import EmailSent from './pages/email-sent-page/email-sent';
 import DeleteAccount from './pages/sign-in/sub-pages/delete-account/delete-account';
+import HomePage from './pages/homepage/homepage';
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<SignUp/>} />
+          <Route path="/" element={<HomePage/>} />
+          <Route path="sign-up" element={<SignUp/>} />
           <Route path="/sign-in" element={<SignIn/>} />
           <Route path="/forgot-password" element={<ForgotPassword/>} />
           <Route path="/email-sent" element={<EmailSent/>} />

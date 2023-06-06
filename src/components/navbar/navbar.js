@@ -7,9 +7,11 @@ import "..//..//fonts/app-fonts.module.css";
 import "..//..//configs/app-colors.module.css";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SearchBar from "../search-bar/search-bar";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function NavBar() {
+    const location = useLocation();
+    const showSignInLink = location.pathname === "/";
     return (
         <>
             <header>
@@ -19,12 +21,12 @@ function NavBar() {
                     </Link>
                 </div>
                 <div className="text">
-                    <p >
+                    <p>
                         <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                     </p>
                 </div>
 
-                <div class="header-right">
+                <div class={`header-right ${showSignInLink ? 'homepage-style' : ''}`}>
                     <SearchBar />
                     <div class="cart-logo">
                         <Link to="">
@@ -35,6 +37,11 @@ function NavBar() {
                         <Link to="">
                             <img src={accountlogo} alt="Account Logo" />
                         </Link>
+                        {showSignInLink && (
+                            <p>
+                                <Link id="sign-in-text-navbar" to="/sign-in"> <strong> Sign In </strong> </Link>
+                            </p>
+                        )}
                     </div>
                 </div>
             </header>
