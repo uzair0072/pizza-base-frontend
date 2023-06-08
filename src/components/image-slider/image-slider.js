@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "./slider.css";
+import "./image-slider.css";
 
-const SlideCarousel = ({ slides }) => {
+const ImageCarousel = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -62,4 +62,4 @@ const SlideCarousel = ({ slides }) => {
   );
 };
 
-export default SlideCarousel;
+export default ImageCarousel;
