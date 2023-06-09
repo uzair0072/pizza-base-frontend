@@ -18,6 +18,7 @@ function HomePage() {
             <NavBar />
             <ImageCarousel slides={slides} />
             <LogoCarousel />
+            <hr></hr>
         </>
     )
 }
