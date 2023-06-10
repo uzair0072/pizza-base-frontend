@@ -8,3 +8,24 @@ hr {
     opacity: 0.3;
     border: 2px solid #000000;
 }
+
+.pizza-deal,
+.burger-deal, .side-deal, .special-deal, .pasta-deal, .add-ons-deal {
+    display: flex;
+    flex-direction: row;
+}
+
+.sandwich-platter-deal {
+    display: flex;
+    flex-direction: column;
+}
+
+.sandwich-col-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.sandwich-col-2 {
+    display: flex;
+    flex-direction: row;
+}

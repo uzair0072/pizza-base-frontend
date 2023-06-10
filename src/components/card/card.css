@@ -1,0 +1,84 @@
+.card {
+    width: 274px;
+    height: 345px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px 0px 20px 50px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: linear-gradient(180deg, #FFCE4F 53.04%, rgba(255, 122, 0, 0) 108.7%);
+    cursor: pointer
+}
+
+.card-image {
+    width: 268px;
+    height: 196px;
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-rating {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.star {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.filled-star,
+.star:hover {
+    color: gold;
+}
+
+.rating-value {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F63131;
+}
+
+.favorite-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFB5A6;
+    border: 1px solid #FB9696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-button:hover {
+    background-color: gold;
+}
+
+.favorite-button svg {
+    color: white;
+    font-size: 18px;
+}

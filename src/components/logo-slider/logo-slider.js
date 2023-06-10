@@ -33,9 +33,6 @@ const LogoCarousel = () => {
 
   return (
     <>
-      <div>
-        <h3 style={{ marginLeft: '50px', marginTop: '50px' }}> Main Categories </h3>
-      </div>
       <div className="carousel-container" style={{ display: 'flex', margin: '30px 50px', position: 'relative' }}>
         <ul
           ref={carouselRef}
@@ -67,7 +64,7 @@ const LogoCarousel = () => {
               }}
             >
               <img src={logo.imageUrl} alt={logo.text} style={{ width: '100px', height: '100px', marginBottom: '10px' }} />
-              <span style={{fontWeight: 'bold'}}>{logo.text}</span>
+              <span style={{ fontWeight: 'bold' }}>{logo.text}</span>
             </li>
           ))}
         </ul>
