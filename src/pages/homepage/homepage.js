@@ -29,6 +29,7 @@ import addOnsDeal1 from "..//..//assets/images/add-ons-1.svg";
 import addOnsDeal2 from "..//..//assets/images/add-ons-2.svg";
 import addOnsDeal3 from "..//..//assets/images/add-ons-3.svg";
 import addOnsDeal4 from "..//..//assets/images/add-ons-4.svg";
+import Footer from "../../components/footer/footer";
 
 function HomePage() {
     const slides = [
@@ -41,12 +42,12 @@ function HomePage() {
             <NavBar />
             <ImageCarousel slides={slides} />
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Main Categories </h3>
+                <h3 className="homepage-headings"> Main Categories </h3>
             </div>
             <LogoCarousel />
-            <hr></hr>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Pizza Deals </h3>
+                <h3 className="homepage-headings"> Pizza Deals </h3>
             </div>
             <div className="pizza-deal">
                 <Card
@@ -65,8 +66,9 @@ function HomePage() {
                     price={"PKR 1,680"}
                 />
             </div>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Burger Deals </h3>
+                <h3 className="homepage-headings"> Burger Deals </h3>
             </div>
             <div className="burger-deal">
                 <Card
@@ -90,42 +92,44 @@ function HomePage() {
                     price={"PKR 1,760"}
                 />
             </div>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Sandwiches & Platters </h3>
+                <h3 className="homepage-headings"> Sandwiches & Platters </h3>
             </div>
             <div className="sandwich-platter-deal">
                 <div className="sandwich-col-1">
-                <Card
-                    imageSrc={sandwichDeal1}
-                    itemName={"Euro Sandwich"}
-                    price={"PKR 790"}
-                />
-                <Card
-                    imageSrc={sandwichDeal2}
-                    itemName={"Classic Roll Platter"}
-                    price={"PKR 990"}
-                />
-                <Card
-                    imageSrc={sandwichDeal3}
-                    itemName={"Special Roasted Platter"}
-                    price={"PKR 980"}
-                />
-                <Card
-                    imageSrc={sandwichDeal4}
-                    itemName={"Mexican Sandwich"}
-                    price={"PKR 780"}
-                />
+                    <Card
+                        imageSrc={sandwichDeal1}
+                        itemName={"Euro Sandwich"}
+                        price={"PKR 790"}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal2}
+                        itemName={"Classic Roll Platter"}
+                        price={"PKR 990"}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal3}
+                        itemName={"Special Roasted Platter"}
+                        price={"PKR 980"}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal4}
+                        itemName={"Mexican Sandwich"}
+                        price={"PKR 780"}
+                    />
                 </div>
                 <div className="sandwich-col-2">
-                <Card
-                    imageSrc={sandwichDeal5}
-                    itemName={"Pizza Stacker"}
-                    price={"PKR 790"}
-                />
+                    <Card
+                        imageSrc={sandwichDeal5}
+                        itemName={"Pizza Stacker"}
+                        price={"PKR 790"}
+                    />
                 </div>
             </div>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Side Order </h3>
+                <h3 className="homepage-headings"> Side Order </h3>
             </div>
             <div className="side-deal">
                 <Card
@@ -144,8 +148,9 @@ function HomePage() {
                     price={"PKR 260"}
                 />
             </div>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Special </h3>
+                <h3 className="homepage-headings"> Special </h3>
             </div>
             <div className="special-deal">
                 <Card
@@ -159,8 +164,9 @@ function HomePage() {
                     price={"PKR 1,360"}
                 />
             </div>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Pastas </h3>
+                <h3 className="homepage-headings"> Pastas </h3>
             </div>
             <div className="pasta-deal">
                 <Card
@@ -169,8 +175,9 @@ function HomePage() {
                     price={"PKR 790"}
                 />
             </div>
+            <hr className="homepage-hr"></hr>
             <div>
-                <h3 style={{ marginLeft: '50px', marginTop: '50px', fontWeight: 700 }}> Add Ons </h3>
+                <h3 className="homepage-headings"> Add Ons </h3>
             </div>
             <div className="add-ons-deal">
                 <Card
@@ -194,8 +201,11 @@ function HomePage() {
                     price={"PKR 80"}
                 />
             </div>
+            <div className="footer">
+                <Footer />
+            </div>
         </>
     )
 }
 
-export default HomePage
+export default HomePage;

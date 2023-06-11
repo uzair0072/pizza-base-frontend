@@ -26,14 +26,14 @@ function NavBar() {
                     </p>
                 </div>
 
-                <div class={`header-right ${showSignInLink ? 'homepage-style' : ''}`}>
+                <div className={`header-right ${showSignInLink ? 'homepage-style' : ''}`}>
                     <SearchBar />
-                    <div class="cart-logo">
+                    <div className="cart-logo">
                         <Link to="">
                             <img src={cartlogo} alt="Cart Logo" />
                         </Link>
                     </div>
-                    <div class="account-logo">
+                    <div className="account-logo">
                         <Link to="">
                             <img src={accountlogo} alt="Account Logo" />
                         </Link>
