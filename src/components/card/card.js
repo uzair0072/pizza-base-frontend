@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaPlusCircle } from 'react-icons/fa';
 import "./card.css";
+import { Link } from 'react-router-dom';
 
 const Card = ({ imageSrc, itemName, rating, price }) => {
     const [hoveredRating, setHoveredRating] = useState(0);
@@ -12,9 +13,13 @@ const Card = ({ imageSrc, itemName, rating, price }) => {
     return (
         <>
             <div className="card">
-                <img src={imageSrc} alt={itemName} className="card-image" />
+                <Link to="./small-pizza-deal">
+                    <img src={imageSrc} alt={itemName} className="card-image" />
+                </Link>
                 <div className="card-content">
-                    <h4 className="card-item-name">{itemName}</h4>
+                    <Link to="./small-pizza-deal" style={{textDecoration : "none"}}>
+                        <h4 className="card-item-name">{itemName}</h4>
+                    </Link>
                     <div className="card-rating">
                         {[1, 2, 3, 4, 5].map((star) => (
                             <span

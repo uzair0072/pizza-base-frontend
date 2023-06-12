@@ -49,7 +49,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Pizza Deals </h3>
             </div>
-            <div className="pizza-deal">
+            <div className="pizza-deal" id="pizza-deal">
                 <Card
                     imageSrc={pizzaDeal1}
                     itemName={"Small Pizza Deal"}
@@ -70,7 +70,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Burger Deals </h3>
             </div>
-            <div className="burger-deal">
+            <div className="burger-deal" id="burger-deal">
                 <Card
                     imageSrc={burgerDeal1}
                     itemName={"Burger Deal 1"}
@@ -96,7 +96,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Sandwiches & Platters </h3>
             </div>
-            <div className="sandwich-platter-deal">
+            <div className="sandwich-platter-deal" id="sandwich-deal">
                 <div className="sandwich-col-1">
                     <Card
                         imageSrc={sandwichDeal1}
@@ -119,7 +119,7 @@ function HomePage() {
                         price={"PKR 780"}
                     />
                 </div>
-                <div className="sandwich-col-2">
+                <div className="sandwich-col-2" id="platter-deal">
                     <Card
                         imageSrc={sandwichDeal5}
                         itemName={"Pizza Stacker"}
@@ -131,7 +131,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Side Order </h3>
             </div>
-            <div className="side-deal">
+            <div className="side-deal" id="side-deal">
                 <Card
                     imageSrc={sideOrder1}
                     itemName={"Fries"}
@@ -152,7 +152,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Special </h3>
             </div>
-            <div className="special-deal">
+            <div className="special-deal" id="special-deal">
                 <Card
                     imageSrc={specialDeal1}
                     itemName={"Crown Crust"}
@@ -168,7 +168,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Pastas </h3>
             </div>
-            <div className="pasta-deal">
+            <div className="pasta-deal" id="pasta-deal">
                 <Card
                     imageSrc={pastaDeal1}
                     itemName={"Crunchy Chicken Pasta"}
@@ -179,7 +179,7 @@ function HomePage() {
             <div>
                 <h3 className="homepage-headings"> Add Ons </h3>
             </div>
-            <div className="add-ons-deal">
+            <div className="add-ons-deal" id="add-ons-deal">
                 <Card
                     imageSrc={addOnsDeal1}
                     itemName={"Juice"}

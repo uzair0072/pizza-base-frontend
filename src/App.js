@@ -9,6 +9,7 @@ import ForgotPassword from './pages/forgot-password-page/forgot-password';
 import EmailSent from './pages/email-sent-page/email-sent';
 import DeleteAccount from './pages/sign-in/sub-pages/delete-account/delete-account';
 import HomePage from './pages/homepage/homepage';
+import SmallPizzaDeal from './pages/item-description/small-pizza-deal/small-pizza-deal';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/my-profile" element={<MyProfile/>} />
           <Route path="/my-settings" element={<Settings/>} />
           <Route path="/delete-account" element={<DeleteAccount/>} />
+          <Route path="/small-pizza-deal" element={<SmallPizzaDeal/>} />
         </Routes>
       </Router>
     </>

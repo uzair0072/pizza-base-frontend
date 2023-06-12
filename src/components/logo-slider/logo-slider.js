@@ -20,16 +20,23 @@ const LogoCarousel = () => {
   };
 
   const logos = [
-    { imageUrl: pizzaCategory, text: "Pizza Deals" },
-    { imageUrl: burgerCategory, text: "Burger Deals" },
-    { imageUrl: platterCategory, text: "Platters" },
-    { imageUrl: sandwichesCategory, text: "Sandwiches" },
-    { imageUrl: pastasCategory, text: "Pastas" },
-    { imageUrl: sideOrderCategory, text: "Side Order" },
-    { imageUrl: addOnsCategory, text: "Add-Ons" },
-    { imageUrl: "https://www.google.com.pk/", text: "Other" },
-    { imageUrl: "https://www.google.com.pk/", text: "Other" },
+    { imageUrl: pizzaCategory, text: "Pizza Deals", id: "pizza-deal" },
+    { imageUrl: burgerCategory, text: "Burger Deals", id: "burger-deal" },
+    { imageUrl: sandwichesCategory, text: "Sandwiches", id: "sandwich-deal" },
+    { imageUrl: platterCategory, text: "Platters", id: "platter-deal" },
+    { imageUrl: pastasCategory, text: "Pastas", id: "pasta-deal" },
+    { imageUrl: sideOrderCategory, text: "Side Order", id: "side-deal" },
+    { imageUrl: addOnsCategory, text: "Add-Ons", id: "add-ons-deal" },
+    { imageUrl: "https://www.google.com.pk/", text: "Other", id: "" },
+    { imageUrl: "https://www.google.com.pk/", text: "Other", id: "" },
   ];
+
+  const handleLogoClick = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <>
@@ -61,7 +68,9 @@ const LogoCarousel = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 flexDirection: 'column',
+                cursor: 'pointer',
               }}
+              onClick={() => handleLogoClick(logo.id)}
             >
               <img src={logo.imageUrl} alt={logo.text} style={{ width: '100px', height: '100px', marginBottom: '10px' }} />
               <span style={{ fontWeight: 'bold' }}>{logo.text}</span>
