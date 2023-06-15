@@ -19,10 +19,8 @@ header {
 }
 
 #logo-text {
-    display: flex;
-    width: 90px;
-    height: 70px;
     line-height: 85px;
+    margin-left: 0px;
     text-decoration: none;
     color: black;
 }
@@ -58,7 +56,7 @@ header {
 #sign-in-text-navbar {
     display: flex;
     width: 60px;
-    margin-left: 30px;
+    margin-left: 25px;
     line-height: 32px;
     text-decoration: none;
     color: black;

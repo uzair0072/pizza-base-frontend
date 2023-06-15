@@ -20,7 +20,7 @@ function NavBar() {
                         <img id="logo-sm" src={applogo} alt="Logo" />
                     </Link>
                 </div>
-                <div className="text">
+                <div className="logo-text">
                     <p>
                         <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                     </p>

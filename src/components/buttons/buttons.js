@@ -29,6 +29,9 @@ function Buttons({ variant, id, label, width, height }) {
     else if (variant === 'edit') {
         btnClassName = 'btn-edit';
     }
+    else if (variant === 'cart-btn') {
+        btnClassName = 'add-to-cart-btn';
+    }
     else {
         style.backgroundColor = secondary;
     }

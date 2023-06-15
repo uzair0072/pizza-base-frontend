@@ -1,7 +1,7 @@
 import React from "react";
-import "./small-pizza-deal.css"
+import "./regular-pizza-deal.css";
 import Footer from "../../../components/footer/footer";
-import pizzaImage from "..//..//..//assets/images/small-pizza-deal-info-page.svg";
+import pizzaImage from "..//..//..//assets/images/pizza-deal-2.svg";
 import heartIcon from "..//..//..//assets/icons/heart-icon.svg";
 import Counter from "../../../components/add-to-cart-counter/counter";
 import Buttons from "../../../components/buttons/buttons";
@@ -10,7 +10,7 @@ import reviewImage1 from "..//..//..//assets/images/review-image-1.svg";
 import reviewImage2 from "..//..//..//assets/images/review-image-2.svg";
 import reviewImage3 from "..//..//..//assets/images/review-image-3.svg";
 import Card from "../../../components/card/card";
-import pizzaDeal2 from "..//..//..//assets/images/pizza-deal-2.svg";
+import pizzaDeal1 from "..//..//..//assets/images/pizza-deal-1.svg";
 import pizzaDeal3 from "..//..//..//assets/images/pizza-deal-3.svg";
 import { Link, useLocation } from "react-router-dom";
 import applogo from "..//..//..//assets/logo/app-logo.svg";
@@ -21,13 +21,13 @@ import "..//..//../configs/app-colors.module.css";
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import SearchBar from "..//..//..//components/search-bar/search-bar";
 
-function SmallPizzaDeal() {
+function RegularPizzaDeal() {
     const location = useLocation();
-    const showSignInLink = location.pathname === "/small-pizza-deal";
-    return (
+    const showSignInLink = location.pathname === "/regular-pizza-deal";
+    return(
         <>
-            <div className="page-container">
-            <header>
+        <div className="page-container">
+        <header>
                 <div className="logo">
                     <Link to="/">
                         <img id="logo-sm" src={applogo} alt="Logo" />
@@ -39,7 +39,7 @@ function SmallPizzaDeal() {
                     </p>
                 </div>
 
-                <div className={`header-right ${showSignInLink ? 'small-pizza-deal-style' : ''}`}>
+                <div className={`header-right ${showSignInLink ? 'regular-pizza-deal-style' : ''}`}>
                     <SearchBar />
                     <div className="cart-logo">
                         <Link to="">
@@ -61,12 +61,12 @@ function SmallPizzaDeal() {
                 <div className="content">
                     <div className="pizza-info-container">
                         <div className="image-col">
-                            <img src={pizzaImage} alt="pizza deal" />
+                            <img src={pizzaImage} alt="pizza deal" id="pizza-img" />
                         </div>
                         <div className="deal-info-col">
                             <div className="info-text">
-                                <p className="deal-heading"> Small Pizza Deal </p>
-                                <p className="deal-description"> Any flavor from local love or over the sea category and one 250ml soft drink.</p>
+                                <p className="deal-heading"> Regular Pizza Deal </p>
+                                <p className="deal-description"> Any flavor from local love or over the sea category and two 250ml soft drinks.</p>
                             </div>
                             <div className="add-to-fav">
                                 <img src={heartIcon} alt="heart-icon" id="heart-icon" />
@@ -76,7 +76,7 @@ function SmallPizzaDeal() {
                                 <Counter />
                             </div>
                             <div className="price">
-                                PKR 590
+                                PKR 1,290
                             </div>
                             <Buttons
                                 variant={"cart-btn"}
@@ -116,10 +116,10 @@ function SmallPizzaDeal() {
                     </div>
                     <div className="suggested-deals">
                         <Card
-                            imageSrc={pizzaDeal2}
-                            itemName={"Regular Pizza Deal"}
-                            price={"PKR 1,290"}
-                            linkPath={"/regular-pizza-deal"}
+                            imageSrc={pizzaDeal1}
+                            itemName={"Small Pizza Deal"}
+                            price={"PKR 590"}
+                            linkPath={"/small-pizza-deal"}
                         />
                         <Card
                             imageSrc={pizzaDeal3}
@@ -135,4 +135,4 @@ function SmallPizzaDeal() {
     )
 }
 
-export default SmallPizzaDeal;
+export default RegularPizzaDeal;

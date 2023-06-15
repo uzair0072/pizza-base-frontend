@@ -35,3 +35,7 @@ img {
     display: flex;
     flex-direction: row;
 }
+
+.add-ons-deal {
+    margin-bottom: 50px;
+}

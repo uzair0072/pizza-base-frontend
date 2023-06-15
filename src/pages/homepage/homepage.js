@@ -54,16 +54,19 @@ function HomePage() {
                     imageSrc={pizzaDeal1}
                     itemName={"Small Pizza Deal"}
                     price={"PKR 590"}
+                    linkPath={"./small-pizza-deal"}
                 />
                 <Card
                     imageSrc={pizzaDeal2}
                     itemName={"Regular Pizza Deal"}
                     price={"PKR 1,290"}
+                    linkPath={"./regular-pizza-deal"}
                 />
                 <Card
                     imageSrc={pizzaDeal3}
                     itemName={"Large Pizza Deal"}
                     price={"PKR 1,680"}
+                    linkPath={"./large-pizza-deal"}
                 />
             </div>
             <hr className="homepage-hr"></hr>
