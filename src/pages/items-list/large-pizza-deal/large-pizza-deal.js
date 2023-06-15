@@ -19,7 +19,7 @@ import accountlogo from "..//..//../assets/icons/profile-circle.svg";
 import "..//..//../fonts/app-fonts.module.css";
 import "..//..//../configs/app-colors.module.css";
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import SearchBar from "..//..//..//components/search-bar/search-bar";
+import SearchBar from "../../../components/search-bar/search-bar";
 
 function LargePizzaDeal() {
     const location = useLocation();
