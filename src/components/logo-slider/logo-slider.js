@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import "./logo-slider.css";
-import pizzaCategory from "..//..//assets/images/pizza-category.svg";
-import burgerCategory from "..//..//assets/images/burger-category.svg";
+import pizzaCategory from "..//..//assets/images/pizza.png";
+import burgerCategory from "..//..//assets/images/burger.png";
+import pizzaDealCategory from "..//..//assets/images/pizza-category.svg";
+import burgerDealCategory from "..//..//assets/images/burger-category.svg";
 import platterCategory from "..//..//assets/images/platter-category.svg";
 import pastasCategory from "..//..//assets/images/pastas-category.svg";
 import sandwichesCategory from "..//..//assets/images/sandwiches-category.svg";
@@ -20,10 +22,12 @@ const LogoCarousel = () => {
   };
 
   const logos = [
-    { imageUrl: pizzaCategory, text: "Pizza Deals", id: "pizza-deal" },
-    { imageUrl: burgerCategory, text: "Burger Deals", id: "burger-deal" },
+    { imageUrl: pizzaCategory, text: "Pizzas", id: "pizza" },
+    { imageUrl: burgerCategory, text: "Burgers", id: "burger" },
     { imageUrl: sandwichesCategory, text: "Sandwiches", id: "sandwich-deal" },
     { imageUrl: platterCategory, text: "Platters", id: "platter-deal" },
+    { imageUrl: pizzaDealCategory, text: "Pizza Deals", id: "pizza-deal" },
+    { imageUrl: burgerDealCategory, text: "Burger Deals", id: "burger-deal" },
     { imageUrl: pastasCategory, text: "Pastas", id: "pasta-deal" },
     { imageUrl: sideOrderCategory, text: "Side Order", id: "side-deal" },
     { imageUrl: addOnsCategory, text: "Add-Ons", id: "add-ons-deal" },

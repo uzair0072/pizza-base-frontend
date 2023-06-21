@@ -38,7 +38,7 @@
     border-radius: 10px;
 }
 
-.add-to-cart-btn {
+.btn-add-to-cart {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -46,9 +46,13 @@
     padding: 10px;
     width: 166px;
     height: 42px;
-    background: #FFB5A6;
+    background-color: #E4202D;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #FFE500;
 }
 
 #google-svg,

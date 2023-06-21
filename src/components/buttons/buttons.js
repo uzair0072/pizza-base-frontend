@@ -30,7 +30,7 @@ function Buttons({ variant, id, label, width, height }) {
         btnClassName = 'btn-edit';
     }
     else if (variant === 'cart-btn') {
-        btnClassName = 'add-to-cart-btn';
+        btnClassName = 'btn-add-to-cart';
     }
     else {
         style.backgroundColor = secondary;

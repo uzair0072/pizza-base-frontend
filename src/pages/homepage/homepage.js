@@ -7,6 +7,23 @@ import slide3 from '..//..//assets/images/slide3.png';
 import "./homepage.css";
 import LogoCarousel from "../../components/logo-slider/logo-slider";
 import Card from "../../components/card/card";
+import pizzaMughlai from "..//..//assets/images/mughlai.png";
+import pizzaArabian from "..//..//assets/images/arabian.png";
+import pizzaCreamy from "..//..//assets/images/creamy.png";
+import pizzaChikenTikka from "..//..//assets/images/chicken-tikka.png";
+import pizzaHotNSpicy from "..//..//assets/images/hotnspicy.png";
+import pizzaSicilian from "..//..//assets/images/sicilian.png";
+import pizzaSupreme from "..//..//assets/images/supreme.png";
+import pizzaTandoori from "..//..//assets/images/tandoori.png";
+import pizzaPeri from "..//..//assets/images/Peri.png";
+import burgerRegular from "..//..//assets/images/regular-burger.png";
+import burgerBazinga from "..//..//assets/images/bazinga-burger.png";
+import burgerBazingaSupreme from "..//..//assets/images/bazinga-supreme.png";
+import sandwichDeal1 from "..//..//assets/images/sandwich-deal-1.svg";
+import sandwichDeal2 from "..//..//assets/images/sandwich-deal-2.svg";
+import sandwichDeal3 from "..//..//assets/images/sandwich-deal-3.svg";
+import sandwichDeal4 from "..//..//assets/images/sandwich-deal-4.svg";
+import sandwichDeal5 from "..//..//assets/images/sandwich-deal-5.svg";
 import pizzaDeal1 from "..//..//assets/images/pizza-deal-1.svg";
 import pizzaDeal2 from "..//..//assets/images/pizza-deal-2.svg";
 import pizzaDeal3 from "..//..//assets/images/pizza-deal-3.svg";
@@ -14,11 +31,6 @@ import burgerDeal1 from "..//..//assets/images/burger-deal-1.svg";
 import burgerDeal2 from "..//..//assets/images/burger-deal-2.svg";
 import burgerDeal3 from "..//..//assets/images/burger-deal-3.svg";
 import burgerDeal4 from "..//..//assets/images/burger-deal-4.svg";
-import sandwichDeal1 from "..//..//assets/images/sandwich-deal-1.svg";
-import sandwichDeal2 from "..//..//assets/images/sandwich-deal-2.svg";
-import sandwichDeal3 from "..//..//assets/images/sandwich-deal-3.svg";
-import sandwichDeal4 from "..//..//assets/images/sandwich-deal-4.svg";
-import sandwichDeal5 from "..//..//assets/images/sandwich-deal-5.svg";
 import sideOrder1 from "..//..//assets/images/side-order-1.svg";
 import sideOrder2 from "..//..//assets/images/side-order-2.svg";
 import sideOrder3 from "..//..//assets/images/side-order-3.svg";
@@ -45,6 +57,119 @@ function HomePage() {
                 <h3 className="homepage-headings"> Main Categories </h3>
             </div>
             <LogoCarousel />
+            <hr className="homepage-hr"></hr>
+            <div>
+                <h3 className="homepage-headings"> Pizzas </h3>
+            </div>
+            <div className="pizza-category" id="pizza">
+                <div className="pizza-col-1">
+                    <Card
+                        imageSrc={pizzaMughlai}
+                        itemName={"Chicken Mughlai Base"}
+                        price={"PKR 600"}
+                    />
+                    <Card
+                        imageSrc={pizzaSupreme}
+                        itemName={"Chicken Supreme Base"}
+                        price={"PKR 600"}
+                    />
+                    <Card
+                        imageSrc={pizzaArabian}
+                        itemName={"Chicken Arabian Base"}
+                        price={"PKR 600"}
+                    />
+                    <Card
+                        imageSrc={pizzaCreamy}
+                        itemName={"Chicken Creamy Base"}
+                        price={"PKR 600"}
+                    />
+                </div>
+                <div className="pizza-col-2">
+                    <Card
+                        imageSrc={pizzaTandoori}
+                        itemName={"Tandoori Hot"}
+                        price={"PKR 550"}
+                    />
+                    <Card
+                        imageSrc={pizzaSicilian}
+                        itemName={"Fajita Sicilian"}
+                        price={"PKR 550"}
+                    />
+                    <Card
+                        imageSrc={pizzaChikenTikka}
+                        itemName={"Fajita Chicken"}
+                        price={"PKR 550"}
+                    />
+                    <Card
+                        imageSrc={pizzaHotNSpicy}
+                        itemName={"Hot & Spicy"}
+                        price={"PKR 550"}
+                    />
+                </div>
+                <div className="pizza-col-3">
+                    <Card
+                        imageSrc={pizzaPeri}
+                        itemName={"Peri Italian"}
+                        price={"PKR 550"}
+                    />
+                </div>
+            </div>
+            <hr className="homepage-hr"></hr>
+            <div>
+                <h3 className="homepage-headings"> Burgers </h3>
+            </div>
+            <div className="burger-category" id="burger">
+                <Card
+                    imageSrc={burgerRegular}
+                    itemName={"Reggy Burger"}
+                    price={"PKR 360"}
+                />
+                <Card
+                    imageSrc={burgerBazinga}
+                    itemName={"Bazinga Burger"}
+                    price={"PKR 490"}
+                />
+                <Card
+                    imageSrc={burgerBazingaSupreme}
+                    itemName={"Bazinga Supreme"}
+                    price={"PKR 690"}
+                />
+            </div>
+            <hr className="homepage-hr"></hr>
+            <div>
+                <h3 className="homepage-headings"> Sandwiches & Platters </h3>
+            </div>
+            <div className="sandwich-platter-deal" id="sandwich-deal">
+                <div className="sandwich-col-1">
+                    <Card
+                        imageSrc={sandwichDeal1}
+                        itemName={"Euro Sandwich"}
+                        price={"PKR 790"}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal2}
+                        itemName={"Classic Roll Platter"}
+                        price={"PKR 990"}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal3}
+                        itemName={"Special Roasted Platter"}
+                        price={"PKR 980"}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal4}
+                        itemName={"Mexican Sandwich"}
+                        price={"PKR 780"}
+                    />
+                </div>
+                <div className="sandwich-col-2" id="platter-deal">
+                    <Card
+                        imageSrc={sandwichDeal5}
+                        itemName={"Pizza Stacker"}
+                        price={"PKR 790"}
+                    />
+                </div>
+            </div>
             <hr className="homepage-hr"></hr>
             <div>
                 <h3 className="homepage-headings"> Pizza Deals </h3>
@@ -94,41 +219,6 @@ function HomePage() {
                     itemName={"Burger Deal 4"}
                     price={"PKR 1,760"}
                 />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Sandwiches & Platters </h3>
-            </div>
-            <div className="sandwich-platter-deal" id="sandwich-deal">
-                <div className="sandwich-col-1">
-                    <Card
-                        imageSrc={sandwichDeal1}
-                        itemName={"Euro Sandwich"}
-                        price={"PKR 790"}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal2}
-                        itemName={"Classic Roll Platter"}
-                        price={"PKR 990"}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal3}
-                        itemName={"Special Roasted Platter"}
-                        price={"PKR 980"}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal4}
-                        itemName={"Mexican Sandwich"}
-                        price={"PKR 780"}
-                    />
-                </div>
-                <div className="sandwich-col-2" id="platter-deal">
-                    <Card
-                        imageSrc={sandwichDeal5}
-                        itemName={"Pizza Stacker"}
-                        price={"PKR 790"}
-                    />
-                </div>
             </div>
             <hr className="homepage-hr"></hr>
             <div>

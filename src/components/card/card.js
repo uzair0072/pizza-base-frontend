@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { FaPlusCircle } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
 import './card.css';
 import { Link } from 'react-router-dom';
+import Buttons from '../buttons/buttons';
 
 const Card = ({ imageSrc, itemName, rating, price, linkPath }) => {
     const [hoveredRating, setHoveredRating] = useState(0);
@@ -24,8 +25,8 @@ const Card = ({ imageSrc, itemName, rating, price, linkPath }) => {
                         <span
                             key={star}
                             className={`star ${star <= (hoveredRating || rating)
-                                    ? 'filled-star'
-                                    : 'empty-star'
+                                ? 'filled-star'
+                                : 'empty-star'
                                 }`}
                             onMouseEnter={() => handleStarHover(star)}
                             onMouseLeave={() => handleStarHover(rating)}
@@ -36,8 +37,15 @@ const Card = ({ imageSrc, itemName, rating, price, linkPath }) => {
                     <span className="rating-value">{rating}</span>
                 </div>
                 <p className="card-price">{price}</p>
+                <Buttons
+                    variant={"cart-btn"}
+                    id = {"add-to-cart-btn"}
+                    label = {"Add To Cart"}
+                    width = {166}
+                    height = {42}
+                />
                 <div className="favorite-button">
-                    <FaPlusCircle className="add-icon" />
+                    <FaHeart className="add-icon" />
                 </div>
             </div>
         </div>

@@ -15,23 +15,18 @@ img {
     border: 2px solid #000000;
 }
 
-.pizza-deal,
+.pizza-category, .burger-category, .pizza-deal,
 .burger-deal, .side-deal, .special-deal, .pasta-deal, .add-ons-deal {
     display: flex;
     flex-direction: row;
 }
 
-.sandwich-platter-deal {
+.pizza-category, .sandwich-platter-deal {
     display: flex;
     flex-direction: column;
 }
 
-.sandwich-col-1 {
-    display: flex;
-    flex-direction: row;
-}
-
-.sandwich-col-2 {
+.pizza-col-1, .pizza-col-2, .pizza-col-3, .sandwich-col-1, .sandwich-col-2 {
     display: flex;
     flex-direction: row;
 }
