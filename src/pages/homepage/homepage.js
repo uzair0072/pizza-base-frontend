@@ -42,6 +42,8 @@ import addOnsDeal2 from "..//..//assets/images/add-ons-2.svg";
 import addOnsDeal3 from "..//..//assets/images/add-ons-3.svg";
 import addOnsDeal4 from "..//..//assets/images/add-ons-4.svg";
 import Footer from "../../components/footer/footer";
+import { useNavigate } from "react-router-dom";
+
 
 function HomePage() {
     const slides = [
@@ -49,6 +51,12 @@ function HomePage() {
         <img src={slide2} alt="Slide 2" />,
         <img src={slide3} alt="Slide 3" />,
     ];
+
+    const history = useNavigate();
+    const handleProductClick = (category) => {
+        history(`/items?category=${category}`);
+    };
+
     return (
         <>
             <NavBar />
@@ -67,21 +75,25 @@ function HomePage() {
                         imageSrc={pizzaMughlai}
                         itemName={"Chicken Mughlai Base"}
                         price={"PKR 600"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                     <Card
                         imageSrc={pizzaSupreme}
                         itemName={"Chicken Supreme Base"}
                         price={"PKR 600"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                     <Card
                         imageSrc={pizzaArabian}
                         itemName={"Chicken Arabian Base"}
                         price={"PKR 600"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                     <Card
                         imageSrc={pizzaCreamy}
                         itemName={"Chicken Creamy Base"}
                         price={"PKR 600"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                 </div>
                 <div className="pizza-col-2">
@@ -89,21 +101,25 @@ function HomePage() {
                         imageSrc={pizzaTandoori}
                         itemName={"Tandoori Hot"}
                         price={"PKR 550"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                     <Card
                         imageSrc={pizzaSicilian}
                         itemName={"Fajita Sicilian"}
                         price={"PKR 550"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                     <Card
                         imageSrc={pizzaChikenTikka}
                         itemName={"Fajita Chicken"}
                         price={"PKR 550"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                     <Card
                         imageSrc={pizzaHotNSpicy}
                         itemName={"Hot & Spicy"}
                         price={"PKR 550"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                 </div>
                 <div className="pizza-col-3">
@@ -111,6 +127,7 @@ function HomePage() {
                         imageSrc={pizzaPeri}
                         itemName={"Peri Italian"}
                         price={"PKR 550"}
+                        onClick={() => handleProductClick("pizza")}
                     />
                 </div>
             </div>
@@ -123,16 +140,19 @@ function HomePage() {
                     imageSrc={burgerRegular}
                     itemName={"Reggy Burger"}
                     price={"PKR 360"}
+                    onClick={() => handleProductClick("burger")}
                 />
                 <Card
                     imageSrc={burgerBazinga}
                     itemName={"Bazinga Burger"}
                     price={"PKR 490"}
+                    onClick={() => handleProductClick("burger")}
                 />
                 <Card
                     imageSrc={burgerBazingaSupreme}
                     itemName={"Bazinga Supreme"}
                     price={"PKR 690"}
+                    onClick={() => handleProductClick("burger")}
                 />
             </div>
             <hr className="homepage-hr"></hr>
@@ -145,28 +165,33 @@ function HomePage() {
                         imageSrc={sandwichDeal1}
                         itemName={"Euro Sandwich"}
                         price={"PKR 790"}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal2}
-                        itemName={"Classic Roll Platter"}
-                        price={"PKR 990"}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal3}
-                        itemName={"Special Roasted Platter"}
-                        price={"PKR 980"}
+                        onClick={() => handleProductClick("sandwich")}
                     />
                     <Card
                         imageSrc={sandwichDeal4}
                         itemName={"Mexican Sandwich"}
                         price={"PKR 780"}
+                        onClick={() => handleProductClick("sandwich")}
                     />
                 </div>
                 <div className="sandwich-col-2" id="platter-deal">
                     <Card
+                        imageSrc={sandwichDeal2}
+                        itemName={"Classic Roll Platter"}
+                        price={"PKR 990"}
+                        onClick={() => handleProductClick("platter")}
+                    />
+                    <Card
+                        imageSrc={sandwichDeal3}
+                        itemName={"Special Roasted Platter"}
+                        price={"PKR 980"}
+                        onClick={() => handleProductClick("platter")}
+                    />
+                    <Card
                         imageSrc={sandwichDeal5}
                         itemName={"Pizza Stacker"}
                         price={"PKR 790"}
+                        onClick={() => handleProductClick("platter")}
                     />
                 </div>
             </div>
@@ -179,19 +204,19 @@ function HomePage() {
                     imageSrc={pizzaDeal1}
                     itemName={"Small Pizza Deal"}
                     price={"PKR 590"}
-                    linkPath={"./small-pizza-deal"}
+                    onClick={() => handleProductClick("pizza-deal")}
                 />
                 <Card
                     imageSrc={pizzaDeal2}
                     itemName={"Regular Pizza Deal"}
                     price={"PKR 1,290"}
-                    linkPath={"./regular-pizza-deal"}
+                    onClick={() => handleProductClick("pizza-deal")}
                 />
                 <Card
                     imageSrc={pizzaDeal3}
                     itemName={"Large Pizza Deal"}
                     price={"PKR 1,680"}
-                    linkPath={"./large-pizza-deal"}
+                    onClick={() => handleProductClick("pizza-deal")}
                 />
             </div>
             <hr className="homepage-hr"></hr>
@@ -203,21 +228,27 @@ function HomePage() {
                     imageSrc={burgerDeal1}
                     itemName={"Burger Deal 1"}
                     price={"PKR 1,060"}
+                    onClick={() => handleProductClick("burger-deal")}
                 />
                 <Card
                     imageSrc={burgerDeal2}
                     itemName={"Burger Deal 2"}
                     price={"PKR 1,360"}
+                    onClick={() => handleProductClick("burger-deal")}
+
                 />
                 <Card
                     imageSrc={burgerDeal3}
                     itemName={"Burger Deal 3"}
                     price={"PKR 1,660"}
+                    onClick={() => handleProductClick("burger-deal")}
+
                 />
                 <Card
                     imageSrc={burgerDeal4}
                     itemName={"Burger Deal 4"}
                     price={"PKR 1,760"}
+                    onClick={() => handleProductClick("burger-deal")}
                 />
             </div>
             <hr className="homepage-hr"></hr>
@@ -229,16 +260,20 @@ function HomePage() {
                     imageSrc={sideOrder1}
                     itemName={"Fries"}
                     price={"PKR 190"}
+                    onClick={() => handleProductClick("side-deal")}
                 />
                 <Card
                     imageSrc={sideOrder2}
                     itemName={"Nuggets"}
                     price={"PKR 220"}
+                    onClick={() => handleProductClick("side-deal")}
+
                 />
                 <Card
                     imageSrc={sideOrder3}
                     itemName={"Chicken Piece"}
                     price={"PKR 260"}
+                    onClick={() => handleProductClick("side-deal")}
                 />
             </div>
             <hr className="homepage-hr"></hr>
@@ -250,11 +285,14 @@ function HomePage() {
                     imageSrc={specialDeal1}
                     itemName={"Crown Crust"}
                     price={"PKR 1,360"}
+                    onClick={() => handleProductClick("special-deal")}
+
                 />
                 <Card
                     imageSrc={specialDeal2}
                     itemName={"Stuff Crust Pizza"}
                     price={"PKR 1,360"}
+                    onClick={() => handleProductClick("special-deal")}
                 />
             </div>
             <hr className="homepage-hr"></hr>
@@ -266,6 +304,7 @@ function HomePage() {
                     imageSrc={pastaDeal1}
                     itemName={"Crunchy Chicken Pasta"}
                     price={"PKR 790"}
+                    onClick={() => handleProductClick("pasta-deal")}
                 />
             </div>
             <hr className="homepage-hr"></hr>
@@ -277,21 +316,25 @@ function HomePage() {
                     imageSrc={addOnsDeal1}
                     itemName={"Juice"}
                     price={"PKR 50"}
+                    onClick={() => handleProductClick("add-ons-deal")}
                 />
                 <Card
                     imageSrc={addOnsDeal2}
                     itemName={"Mayo Dip"}
                     price={"PKR 60"}
+                    onClick={() => handleProductClick("add-ons-deal")}
                 />
                 <Card
                     imageSrc={addOnsDeal3}
                     itemName={"Water Small"}
                     price={"PKR 50"}
+                    onClick={() => handleProductClick("add-ons-deal")}
                 />
                 <Card
                     imageSrc={addOnsDeal4}
                     itemName={"Soft Drink"}
                     price={"PKR 80"}
+                    onClick={() => handleProductClick("add-ons-deal")}
                 />
             </div>
             <div className="footer">
