@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "pizza-base-backend"
-  }
+    "default": "pizza-base-backend",
+    "staging": "pizza-base-frontend"
+  },
+  "targets": {},
+  "etags": {}
 }
