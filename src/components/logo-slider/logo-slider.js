@@ -22,21 +22,25 @@ const LogoCarousel = () => {
   };
 
   const logos = [
-    { imageUrl: pizzaCategory, text: "Pizzas", id: "pizza" },
-    { imageUrl: burgerCategory, text: "Burgers", id: "burger" },
-    { imageUrl: sandwichesCategory, text: "Sandwiches", id: "sandwich-deal" },
-    { imageUrl: platterCategory, text: "Platters", id: "platter-deal" },
-    { imageUrl: pizzaDealCategory, text: "Pizza Deals", id: "pizza-deal" },
-    { imageUrl: burgerDealCategory, text: "Burger Deals", id: "burger-deal" },
-    { imageUrl: pastasCategory, text: "Pastas", id: "pasta-deal" },
-    { imageUrl: sideOrderCategory, text: "Side Order", id: "side-deal" },
-    { imageUrl: addOnsCategory, text: "Add-Ons", id: "add-ons-deal" },
+    { imageUrl: pizzaCategory, text: "Pizzas", id: "main-Pizzas" },
+    { imageUrl: burgerCategory, text: "Burgers", id: "main-Burgers" },
+    { imageUrl: sandwichesCategory, text: "Sandwiches", id: "main-Sandwiches" },
+    { imageUrl: platterCategory, text: "Platters", id: "main-Platters" },
+    { imageUrl: pizzaDealCategory, text: "Pizza Deals", id: "main-Pizza Deals" },
+    { imageUrl: burgerDealCategory, text: "Burger Deals", id: "main-Burger Deals" },
+    { imageUrl: pastasCategory, text: "Pastas", id: "main-Pastas" },
+    { imageUrl: sideOrderCategory, text: "Side Order", id: "main-Side Order" },
+    { imageUrl: addOnsCategory, text: "Add-Ons", id: "main-Add-Ons" },
     { imageUrl: "https://www.google.com.pk/", text: "Other", id: "" },
     { imageUrl: "https://www.google.com.pk/", text: "Other", id: "" },
   ];
 
   const handleLogoClick = (id) => {
+
+    console.log("logo-slider", id)
     const section = document.getElementById(id);
+    console.log("logo-slider section", section)
+
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }

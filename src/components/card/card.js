@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { FaHeart } from 'react-icons/fa';
 import './card.css';
-import { Link } from 'react-router-dom';
 import Buttons from '../buttons/buttons';
 
-const Card = ({ imageSrc, itemName, rating, price, linkPath }) => {
+const Card = ({ imageSrc, itemName, rating, price, onClick }) => {
     const [hoveredRating, setHoveredRating] = useState(0);
 
     const handleStarHover = (hoveredStar) => {
@@ -12,14 +11,10 @@ const Card = ({ imageSrc, itemName, rating, price, linkPath }) => {
     };
 
     return (
-        <div className="card">
-            <Link to={linkPath}>
-                <img src={imageSrc} alt={itemName} className="card-image" />
-            </Link>
+        <div onClick={onClick} className="card">
+            <img src={imageSrc} alt={itemName} className="card-image" />
             <div className="card-content">
-                <Link to={linkPath} style={{ textDecoration: 'none' }}>
-                    <h4 className="card-item-name">{itemName}</h4>
-                </Link>
+                <h4 className="card-item-name">{itemName}</h4>
                 <div className="card-rating">
                     {[1, 2, 3, 4, 5].map((star) => (
                         <span
@@ -39,10 +34,10 @@ const Card = ({ imageSrc, itemName, rating, price, linkPath }) => {
                 <p className="card-price">{price}</p>
                 <Buttons
                     variant={"cart-btn"}
-                    id = {"add-to-cart-btn"}
-                    label = {"Add To Cart"}
-                    width = {166}
-                    height = {42}
+                    id={"add-to-cart-btn"}
+                    label={"Add To Cart"}
+                    width={166}
+                    height={42}
                 />
                 <div className="favorite-button">
                     <FaHeart className="add-icon" />

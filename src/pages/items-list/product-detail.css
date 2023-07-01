@@ -1,0 +1,214 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Set minimum height to 100% of the viewport height */
+}
+
+.content {
+    flex: 1;
+    /* Allow the content to expand and fill the available space */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    background-color: var(--primary);
+}
+
+#logo-sm {
+    width: 70px;
+    height: 90px;
+    margin-left: 20px;
+}
+
+#logo-text {
+    line-height: 85px;
+    margin-left: -10px;
+    text-decoration: none;
+    color: black;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+
+.cart-logo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-top: 15px;
+
+}
+
+.account-logo {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+#sign-in-text-navbar {
+    display: flex;
+    width: 60px;
+    margin-left: 30px;
+    line-height: 32px;
+    text-decoration: none;
+    color: black;
+}
+
+.small-pizza-deal-style {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
+.pizza-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 40px 75px;
+    padding: 20px 20px;
+    gap: 20px;
+    width: 1200px;
+    height: 456px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.image-col {
+    display: flex;
+    flex-direction: row;
+    flex: 30%;
+}
+
+.deal-info-col {
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.deal-heading {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.add-to-fav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+#add-fav-text {
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#add-to-cart-btn {
+    margin-top: 20px;
+}
+
+.rating-heading,
+.review-heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+hr {
+    border: 2px solid grey;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.review-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+}
+
+.review-col-1,
+.review-col-2,
+.review-col-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.review-text-1,
+.review-text-2,
+.review-text-3 {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px 20px;
+    width: 723px;
+    height: 110px;
+    margin-left: 20px;
+}
+
+.text-with-lines {
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000;
+    opacity: 0.7;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.7;
+    margin: 20px 10px;
+}
+
+.suggested-deals {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 40px 75px;
+    padding: 20px 20px;
+    gap: 20px;
+    width: 1200px;
+    height: 456px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}

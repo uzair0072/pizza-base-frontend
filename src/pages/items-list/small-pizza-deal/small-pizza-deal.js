@@ -1,6 +1,6 @@
 import React from "react";
 import "./small-pizza-deal.css"
-import Footer from "../../../components/footer/footer";
+import Footer from "..//..//..//components/footer/footer";
 import pizzaImage from "..//..//..//assets/images/small-pizza-deal-info-page.svg";
 import heartIcon from "..//..//..//assets/icons/heart-icon.svg";
 import Counter from "../../../components/add-to-cart-counter/counter";
@@ -19,7 +19,7 @@ import accountlogo from "..//..//../assets/icons/profile-circle.svg";
 import "..//..//../fonts/app-fonts.module.css";
 import "..//..//../configs/app-colors.module.css";
 import "../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import SearchBar from "../../../components/search-bar/search-bar";
+import SearchBar from "..//..//..//components/search-bar/search-bar";
 
 function SmallPizzaDeal() {
     const location = useLocation();

@@ -9,7 +9,7 @@ import ForgotPassword from './pages/forgot-password-page/forgot-password';
 import EmailSent from './pages/email-sent-page/email-sent';
 import DeleteAccount from './pages/sign-in/sub-pages/delete-account/delete-account';
 import HomePage from './pages/homepage/homepage';
-import ItemsList from './pages/items-list/items-list';
+import ProductDetail from './pages/items-list/product-detail';
 // import SmallPizzaDeal from './pages/item-description/small-pizza-deal/small-pizza-deal';
 // import RegularPizzaDeal from './pages/item-description/regular-pizza-deal/regular-pizza-deal';
 // import LargePizzaDeal from './pages/item-description/large-pizza-deal/large-pizza-deal';
@@ -27,7 +27,7 @@ function App() {
           <Route path="/my-profile" element={<MyProfile/>} />
           <Route path="/my-settings" element={<Settings/>} />
           <Route path="/delete-account" element={<DeleteAccount/>} />
-          <Route path="/items-list" element={<ItemsList/>} />
+          <Route path="/product-detail" element={<ProductDetail/>} />
           {/* <Route path="/small-pizza-deal" element={<SmallPizzaDeal/>} />
           <Route path="/regular-pizza-deal" element={<RegularPizzaDeal/>} />
           <Route path="/large-pizza-deal" element={<LargePizzaDeal/>} /> */}

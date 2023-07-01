@@ -1,0 +1,240 @@
+[
+    {
+        "id": 1,
+        "name": "Chicken Mughlai Base",
+        "price": "600 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 1"
+    },
+    {
+        "id": 2,
+        "name": "Chicken Supreme Base",
+        "price": "600 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 2"
+    },
+    {
+        "id": 3,
+        "name": "Chicken Arabian Base",
+        "price": "600 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 3"
+    },
+    {
+        "id": 4,
+        "name": "Chicken Creamy Base",
+        "price": "600 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 4"
+    },
+    {
+        "id": 5,
+        "name": "Tandoori Hot",
+        "price": "500 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 5"
+    },
+    {
+        "id": 6,
+        "name": "Fajita Sicilian",
+        "price": "500 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 6"
+    },
+    {
+        "id": 7,
+        "name": "Fajita Chicken",
+        "price": "500 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 7"
+    },
+    {
+        "id": 8,
+        "name": "Hot & Spicy",
+        "price": "500 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 8"
+    },
+    {
+        "id": 9,
+        "name": "Peri Italian",
+        "price": "500 Rs",
+        "category": "Pizzas",
+        "description": "Lorem Ipsum 9"
+    },
+    {
+        "id": 10,
+        "name": "Reggy Burger",
+        "price": "350 Rs",
+        "category": "Burgers",
+        "description": "Lorem Ipsum 1"
+    },
+    {
+        "id": 11,
+        "name": "Bazinga Burger",
+        "price": "450 Rs",
+        "category": "Burgers",
+        "description": "Lorem Ipsum 11"
+    },
+    {
+        "id": 12,
+        "name": "Bazinga Supreme",
+        "price": "650 Rs",
+        "category": "Burgers",
+        "description": "Lorem Ipsum 12"
+    },
+    {
+        "id": 13,
+        "name": "Mexican Sandwich",
+        "price": "790 Rs",
+        "category": "Sandwiches",
+        "description": "Lorem Ipsum 13"
+    },
+    {
+        "id": 14,
+        "name": "Euro Sandwich",
+        "price": "790 Rs",
+        "category": "Sandwiches",
+        "description": "Lorem Ipsum 14"
+    },
+    {
+        "id": 15,
+        "name": "Classic Roll Platter",
+        "price": "990 Rs",
+        "category": "Platters",
+        "description": "Lorem Ipsum 15"
+    },
+    {
+        "id": 16,
+        "name": "Special Roasted Platter",
+        "price": "990 Rs",
+        "category": "Platters",
+        "description": "Lorem Ipsum 16"
+    },
+    {
+        "id": 17,
+        "name": "Pizza Stacker",
+        "price": "790 Rs",
+        "category": "Platters",
+        "description": "Lorem Ipsum 17"
+    },
+    {
+        "id": 18,
+        "name": "Small Pizza Deal",
+        "price": "590 Rs",
+        "category": "Pizza Deals",
+        "description": "Lorem Ipsum 18"
+    },
+    {
+        "id": 19,
+        "name": "Regular Pizza Deal",
+        "price": "1,290 Rs",
+        "category": "Pizza Deals",
+        "description": "Lorem Ipsum 19"
+    },
+    {
+        "id": 20,
+        "name": "Large Pizza Deal",
+        "price": "1,690 Rs",
+        "category": "Pizza Deals",
+        "description": "Lorem Ipsum 20"
+    },
+    {
+        "id": 21,
+        "name": "Burger Deal 1",
+        "price": "1,060 Rs",
+        "category": "Burger Deals",
+        "description": "Lorem Ipsum 21"
+    },
+    {
+        "id": 22,
+        "name": "Burger Deal 2",
+        "price": "1,360 Rs",
+        "category": "Burger Deals",
+        "description": "Lorem Ipsum 22"
+    },
+    {
+        "id": 23,
+        "name": "Burger Deal 3",
+        "price": "1,660 Rs",
+        "category": "Burger Deals",
+        "description": "Lorem Ipsum 23"
+    },
+    {
+        "id": 24,
+        "name": "Burger Deal 4",
+        "price": "1,760 Rs",
+        "category": "Burger Deals",
+        "description": "Lorem Ipsum 24"
+    },
+    {
+        "id": 25,
+        "name": "Fries",
+        "price": "190 Rs",
+        "category": "Side Order",
+        "description": "Lorem Ipsum 25"
+    },
+    {
+        "id": 26,
+        "name": "Nuggets",
+        "price": "360 Rs",
+        "category": "Side Order",
+        "description": "Lorem Ipsum 26"
+    },
+    {
+        "id": 27,
+        "name": "Chicken Piece",
+        "price": "260 Rs",
+        "category": "Side Order",
+        "description": "Lorem Ipsum 27"
+    },
+    {
+        "id": 28,
+        "name": "Crown Crust",
+        "price": "1,360 Rs",
+        "category": "Special Deals",
+        "description": "Lorem Ipsum 28"
+    },
+    {
+        "id": 29,
+        "name": "Stuff Crust Pizza",
+        "price": "1,360 Rs",
+        "category": "Special Deals",
+        "description": "Lorem Ipsum 29"
+    },
+    {
+        "id": 30,
+        "name": "Crunchy Chicken Pasta",
+        "price": "790 Rs",
+        "category": "Pastas",
+        "description": "Lorem Ipsum 30"
+    },
+    {
+        "id": 31,
+        "name": "Juice",
+        "price": "50 Rs",
+        "category": "Add-Ons",
+        "description": "Lorem Ipsum 31"
+    },
+     {
+        "id": 32,
+        "name": "Mayo Dip",
+        "price": "60 Rs",
+        "category": "Add-Ons",
+        "description": "Lorem Ipsum 32"
+    },
+     {
+        "id": 33,
+        "name": "Water Small",
+        "price": "50 Rs",
+        "category": "Add-Ons",
+        "description": "Lorem Ipsum 33"
+    },
+     {
+        "id": 34,
+        "name": "Soft Drink",
+        "price": "80 Rs",
+        "category": "Add-Ons",
+        "description": "Lorem Ipsum 34"
+    }
+]

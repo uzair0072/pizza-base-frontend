@@ -25,8 +25,7 @@ function NavBar() {
                         <Link id="logo-text" to="/"> <strong> Pizza Base </strong> </Link>
                     </p>
                 </div>
-
-                <div className={`header-right ${showSignInLink ? 'homepage-style' : ''}`}>
+                <div className={`header-right ${showSignInLink ? 'small-pizza-deal-style' : ''}`}>
                     <SearchBar />
                     <div className="cart-logo">
                         <Link to="">

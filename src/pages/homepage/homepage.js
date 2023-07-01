@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
+import "./homepage.css";
 import NavBar from "../../components/navbar/navbar";
 import ImageCarousel from "../../components/image-slider/image-slider";
 import slide1 from '..//..//assets/images/slide1.svg';
 import slide2 from '..//..//assets/images/slide2.png';
 import slide3 from '..//..//assets/images/slide3.png';
-import "./homepage.css";
 import LogoCarousel from "../../components/logo-slider/logo-slider";
 import Card from "../../components/card/card";
 import pizzaMughlai from "..//..//assets/images/mughlai.png";
@@ -43,6 +43,7 @@ import addOnsDeal3 from "..//..//assets/images/add-ons-3.svg";
 import addOnsDeal4 from "..//..//assets/images/add-ons-4.svg";
 import Footer from "../../components/footer/footer";
 import { useNavigate } from "react-router-dom";
+import data from "../items-list/products-data.json";
 
 
 function HomePage() {
@@ -53,295 +54,124 @@ function HomePage() {
     ];
 
     const history = useNavigate();
-    const handleProductClick = (category) => {
-        history(`/items?category=${category}`);
+    const handleProductClick = (id, name, price, category, img, description) => {
+        history(`/product-detail?id=${id}&name=${name}&price=${price}&category=${category}&img=${img}&description=${description}`);
     };
+
+    // Grouping products by category
+    const groupedProducts = data.reduce((acc, product) => {
+        if (!acc[product.category]) {
+            acc[product.category] = [];
+        }
+        acc[product.category].push(product);
+        return acc;
+    }, {});
+
+    const productImages = {
+        "Pizzas": {
+            "Chicken Mughlai Base": pizzaMughlai,
+            "Chicken Arabian Base": pizzaArabian,
+            "Chicken Creamy Base": pizzaCreamy,
+            "Fajita Chicken": pizzaChikenTikka,
+            "Hot & Spicy": pizzaHotNSpicy,
+            "Fajita Sicilian": pizzaSicilian,
+            "Chicken Supreme Base": pizzaSupreme,
+            "Tandoori Hot": pizzaTandoori,
+            "Peri Italian": pizzaPeri
+        },
+        "Burgers": {
+            "Reggy Burger": burgerRegular,
+            "Bazinga Burger": burgerBazinga,
+            "Bazinga Supreme": burgerBazingaSupreme
+        },
+        "Sandwiches": {
+            "Mexican Sandwich": sandwichDeal1,
+            "Euro Sandwich": sandwichDeal2,
+        },
+        "Platters": {
+            "Classic Roll Platter": sandwichDeal3,
+            "Special Roasted Platter": sandwichDeal4,
+            "Pizza Stacker": sandwichDeal5
+        },
+        "Pizza Deals": {
+            "Small Pizza Deal": pizzaDeal1,
+            "Regular Pizza Deal": pizzaDeal2,
+            "Large Pizza Deal": pizzaDeal3
+        },
+        "Burger Deals": {
+            "Burger Deal 1": burgerDeal1,
+            "Burger Deal 2": burgerDeal2,
+            "Burger Deal 3": burgerDeal3,
+            "Burger Deal 4": burgerDeal4
+        },
+        "Side Order": {
+            "Fries": sideOrder1,
+            "Nuggets": sideOrder2,
+            "Chicken Piece": sideOrder3
+        },
+        "Special Deals": {
+            "Crown Crust": specialDeal1,
+            "Stuff Crust Pizza": specialDeal2
+        },
+        "Pastas": {
+            "Crunchy Chicken Pasta": pastaDeal1
+        },
+        "Add-Ons": {
+            "Juice": addOnsDeal1,
+            "Mayo Dip": addOnsDeal2,
+            "Water Small": addOnsDeal3,
+            "Soft Drink": addOnsDeal4
+        }
+    };
+    const categoryRefs = useRef({});
+    // const handleLogoClick = (category) => {
+    //     const categoryRef = categoryRefs.current[category];
+    //     console.log("category========>",categoryRef)
+    //     if (categoryRef) {
+    //         categoryRef.scrollIntoView({ behavior: "smooth" });
+    //     }
+    // };
 
     return (
         <>
             <NavBar />
             <ImageCarousel slides={slides} />
             <div>
-                <h3 className="homepage-headings"> Main Categories </h3>
+                <h3 className="homepage-headings">Main Categories</h3>
             </div>
-            <LogoCarousel />
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Pizzas </h3>
-            </div>
-            <div className="pizza-category" id="pizza">
-                <div className="pizza-col-1">
-                    <Card
-                        imageSrc={pizzaMughlai}
-                        itemName={"Chicken Mughlai Base"}
-                        price={"PKR 600"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                    <Card
-                        imageSrc={pizzaSupreme}
-                        itemName={"Chicken Supreme Base"}
-                        price={"PKR 600"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                    <Card
-                        imageSrc={pizzaArabian}
-                        itemName={"Chicken Arabian Base"}
-                        price={"PKR 600"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                    <Card
-                        imageSrc={pizzaCreamy}
-                        itemName={"Chicken Creamy Base"}
-                        price={"PKR 600"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
+            <LogoCarousel  />
+            <hr className="homepage-hr" />
+            {Object.entries(groupedProducts).map(([category, products]) => (
+                <div key={category} id={`main-${category}`} ref={(ref) => (categoryRefs.current[category] = ref)}>
+                    <h3 className="homepage-headings">{category}</h3>
+                    <div className="flex flex-wrap col">
+                        {products.map((product) => (
+                            <Card
+                                key={product.id}
+                                imageSrc={productImages[product.category][product.name]}
+                                itemName={product.name}
+                                price={product.price}
+                                onClick={() =>
+                                    handleProductClick(
+                                        product.id,
+                                        product.name,
+                                        product.price,
+                                        product.category,
+                                        productImages[product.category][product.name],
+                                        product.description
+                                    )
+                                }
+                            />
+                        ))}
+                    </div>
+                    <hr className="homepage-hr" />
                 </div>
-                <div className="pizza-col-2">
-                    <Card
-                        imageSrc={pizzaTandoori}
-                        itemName={"Tandoori Hot"}
-                        price={"PKR 550"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                    <Card
-                        imageSrc={pizzaSicilian}
-                        itemName={"Fajita Sicilian"}
-                        price={"PKR 550"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                    <Card
-                        imageSrc={pizzaChikenTikka}
-                        itemName={"Fajita Chicken"}
-                        price={"PKR 550"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                    <Card
-                        imageSrc={pizzaHotNSpicy}
-                        itemName={"Hot & Spicy"}
-                        price={"PKR 550"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                </div>
-                <div className="pizza-col-3">
-                    <Card
-                        imageSrc={pizzaPeri}
-                        itemName={"Peri Italian"}
-                        price={"PKR 550"}
-                        onClick={() => handleProductClick("pizza")}
-                    />
-                </div>
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Burgers </h3>
-            </div>
-            <div className="burger-category" id="burger">
-                <Card
-                    imageSrc={burgerRegular}
-                    itemName={"Reggy Burger"}
-                    price={"PKR 360"}
-                    onClick={() => handleProductClick("burger")}
-                />
-                <Card
-                    imageSrc={burgerBazinga}
-                    itemName={"Bazinga Burger"}
-                    price={"PKR 490"}
-                    onClick={() => handleProductClick("burger")}
-                />
-                <Card
-                    imageSrc={burgerBazingaSupreme}
-                    itemName={"Bazinga Supreme"}
-                    price={"PKR 690"}
-                    onClick={() => handleProductClick("burger")}
-                />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Sandwiches & Platters </h3>
-            </div>
-            <div className="sandwich-platter-deal" id="sandwich-deal">
-                <div className="sandwich-col-1">
-                    <Card
-                        imageSrc={sandwichDeal1}
-                        itemName={"Euro Sandwich"}
-                        price={"PKR 790"}
-                        onClick={() => handleProductClick("sandwich")}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal4}
-                        itemName={"Mexican Sandwich"}
-                        price={"PKR 780"}
-                        onClick={() => handleProductClick("sandwich")}
-                    />
-                </div>
-                <div className="sandwich-col-2" id="platter-deal">
-                    <Card
-                        imageSrc={sandwichDeal2}
-                        itemName={"Classic Roll Platter"}
-                        price={"PKR 990"}
-                        onClick={() => handleProductClick("platter")}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal3}
-                        itemName={"Special Roasted Platter"}
-                        price={"PKR 980"}
-                        onClick={() => handleProductClick("platter")}
-                    />
-                    <Card
-                        imageSrc={sandwichDeal5}
-                        itemName={"Pizza Stacker"}
-                        price={"PKR 790"}
-                        onClick={() => handleProductClick("platter")}
-                    />
-                </div>
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Pizza Deals </h3>
-            </div>
-            <div className="pizza-deal" id="pizza-deal">
-                <Card
-                    imageSrc={pizzaDeal1}
-                    itemName={"Small Pizza Deal"}
-                    price={"PKR 590"}
-                    onClick={() => handleProductClick("pizza-deal")}
-                />
-                <Card
-                    imageSrc={pizzaDeal2}
-                    itemName={"Regular Pizza Deal"}
-                    price={"PKR 1,290"}
-                    onClick={() => handleProductClick("pizza-deal")}
-                />
-                <Card
-                    imageSrc={pizzaDeal3}
-                    itemName={"Large Pizza Deal"}
-                    price={"PKR 1,680"}
-                    onClick={() => handleProductClick("pizza-deal")}
-                />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Burger Deals </h3>
-            </div>
-            <div className="burger-deal" id="burger-deal">
-                <Card
-                    imageSrc={burgerDeal1}
-                    itemName={"Burger Deal 1"}
-                    price={"PKR 1,060"}
-                    onClick={() => handleProductClick("burger-deal")}
-                />
-                <Card
-                    imageSrc={burgerDeal2}
-                    itemName={"Burger Deal 2"}
-                    price={"PKR 1,360"}
-                    onClick={() => handleProductClick("burger-deal")}
-
-                />
-                <Card
-                    imageSrc={burgerDeal3}
-                    itemName={"Burger Deal 3"}
-                    price={"PKR 1,660"}
-                    onClick={() => handleProductClick("burger-deal")}
-
-                />
-                <Card
-                    imageSrc={burgerDeal4}
-                    itemName={"Burger Deal 4"}
-                    price={"PKR 1,760"}
-                    onClick={() => handleProductClick("burger-deal")}
-                />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Side Order </h3>
-            </div>
-            <div className="side-deal" id="side-deal">
-                <Card
-                    imageSrc={sideOrder1}
-                    itemName={"Fries"}
-                    price={"PKR 190"}
-                    onClick={() => handleProductClick("side-deal")}
-                />
-                <Card
-                    imageSrc={sideOrder2}
-                    itemName={"Nuggets"}
-                    price={"PKR 220"}
-                    onClick={() => handleProductClick("side-deal")}
-
-                />
-                <Card
-                    imageSrc={sideOrder3}
-                    itemName={"Chicken Piece"}
-                    price={"PKR 260"}
-                    onClick={() => handleProductClick("side-deal")}
-                />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Special </h3>
-            </div>
-            <div className="special-deal" id="special-deal">
-                <Card
-                    imageSrc={specialDeal1}
-                    itemName={"Crown Crust"}
-                    price={"PKR 1,360"}
-                    onClick={() => handleProductClick("special-deal")}
-
-                />
-                <Card
-                    imageSrc={specialDeal2}
-                    itemName={"Stuff Crust Pizza"}
-                    price={"PKR 1,360"}
-                    onClick={() => handleProductClick("special-deal")}
-                />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Pastas </h3>
-            </div>
-            <div className="pasta-deal" id="pasta-deal">
-                <Card
-                    imageSrc={pastaDeal1}
-                    itemName={"Crunchy Chicken Pasta"}
-                    price={"PKR 790"}
-                    onClick={() => handleProductClick("pasta-deal")}
-                />
-            </div>
-            <hr className="homepage-hr"></hr>
-            <div>
-                <h3 className="homepage-headings"> Add Ons </h3>
-            </div>
-            <div className="add-ons-deal" id="add-ons-deal">
-                <Card
-                    imageSrc={addOnsDeal1}
-                    itemName={"Juice"}
-                    price={"PKR 50"}
-                    onClick={() => handleProductClick("add-ons-deal")}
-                />
-                <Card
-                    imageSrc={addOnsDeal2}
-                    itemName={"Mayo Dip"}
-                    price={"PKR 60"}
-                    onClick={() => handleProductClick("add-ons-deal")}
-                />
-                <Card
-                    imageSrc={addOnsDeal3}
-                    itemName={"Water Small"}
-                    price={"PKR 50"}
-                    onClick={() => handleProductClick("add-ons-deal")}
-                />
-                <Card
-                    imageSrc={addOnsDeal4}
-                    itemName={"Soft Drink"}
-                    price={"PKR 80"}
-                    onClick={() => handleProductClick("add-ons-deal")}
-                />
-            </div>
+            ))}
             <div className="footer">
                 <Footer />
             </div>
         </>
-    )
+    );
 }
 
 export default HomePage;
